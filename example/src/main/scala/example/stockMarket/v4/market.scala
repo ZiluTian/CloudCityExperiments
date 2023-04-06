@@ -44,7 +44,7 @@ class Market() extends Actor {
 
             marketState = stock.updateMarketInfo(stockPrice, dividendPerShare)
             connectedAgentIds.foreach(i => {
-                val msg = new DoubleArrayMessage()
+                val msg = new DoubleArrayMessage(6)
                 msg.doubleArrayValue(0) = id.toDouble
                 msg.doubleArrayValue(1) = stockPrice
                 msg.doubleArrayValue(2) = dividendPerShare
