@@ -1,0 +1,6 @@
+.bsp/*
+.metals/*
+.vscode/*
+**.class
+**/target/*
+generated/src/main/scala/*

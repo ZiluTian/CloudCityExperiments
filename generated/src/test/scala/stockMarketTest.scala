@@ -7,6 +7,8 @@ object stockMarket {
         val tradersPerMarket: Int = args(1).toInt
         val totalTurns: Int = args(2).toInt
         val mode: Int = args(3).toInt
+        val cfreq: Int = args(4).toInt
+        val cinterval: Int = args(5).toInt
         var role: String = "Standalone"
         var port: Int = 25251
         if (args.size > 5) {
@@ -21,29 +23,12 @@ object stockMarket {
         mode match {
             case 1 => {
                 // v1
-                val agents = generated.example.stockMarket.v1.InitData(totalMarkets, tradersPerMarket)
+                val agents = generated.example.stockMarket.base.InitData(totalMarkets, tradersPerMarket, cfreq, cint)
                 API.OptimizationConfig.mergedWorker()
                 val snapshot1 = API.Simulate(agents, totalTurns, role, port)
             }
 
             case 2 => {
-                // v2
-                val cfreq: Int = args(4).toInt
-                val agents = generated.example.stockMarket.v2.InitData(totalMarkets, tradersPerMarket, cfreq)
-                API.OptimizationConfig.mergedWorker()
-                val snapshot1 = API.Simulate(agents, totalTurns, role, port)
-            }
-
-            case 3 => {
-                // v3
-                val cfreq: Int = args(4).toInt
-                val agents = generated.example.stockMarket.v3.InitData(totalMarkets, tradersPerMarket, cfreq)
-                API.OptimizationConfig.mergedWorker()
-                val snapshot1 = API.Simulate(agents, totalTurns, role, port)
-            }
-
-            case 4 => {
-                // v4
                 if (role == "Driver") {
                     API.Simulate.driver(totalTurns)
                 } else if (role.startsWith("Machine-")){
@@ -54,24 +39,15 @@ object stockMarket {
                     API.Simulate.machine(mid, agents, totalTurns)
                 }
             }
-            
-            // case 5 => {
-            //     // v3
-            //     val cfreq: Int = args(4).toInt
-            //     val agents = generated.example.stockMarket.v3.InitData(totalMarkets, tradersPerMarket, cfreq)
-            //     API.OptimizationConfig.concurrentWorker()
-            //     val snapshot1 = API.Simulate(agents, totalTurns, role, port)
-            // }
-
-                        
-            case 6 => {
+ 
+            case 3 => {
                 // generalized double-buffering
                 val agents = generated.example.stockMarket.v6.InitData(totalMarkets, tradersPerMarket)
                 API.OptimizationConfig.mergedWorker()
                 val snapshot1 = API.Simulate(agents, totalTurns, role, port)
             }
 
-            case 7 => {
+            case 4 => {
                 // same semantics as generalized double-buffering, but do not allow dma
                 val agents = generated.example.stockMarket.v7.InitData(totalMarkets, tradersPerMarket)
                 API.OptimizationConfig.mergedWorker()
