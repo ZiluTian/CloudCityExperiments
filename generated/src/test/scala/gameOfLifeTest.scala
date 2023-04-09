@@ -4,17 +4,17 @@ package test
 object gameOfLifeStandalone {
     def main(args: Array[String]): Unit = {
         val edgeFilePath: String = args(0)
-        val totalTurns: Int = args(1).toInt
-        val mode: Int = args(2).toInt
+        val mode: Int = args(1).toInt
+        val cfreq: Int = args(2).toInt
+        val cinterval: Int = args(3).toInt
+        val totalTurns: Int = 200
         var role: String = "Standalone"
         var port: Int = 25251
 
         mode match {
             case 1 => {
-                val cfreq: Int = args(3).toInt
-                val cinterval: Int = args(4).toInt
                 // base
-                val agents = generated.example.gameOfLife.InitData(edgeFilePath, cfreq, cinterval)
+                val agents = generated.example.gameOfLife.base.InitData(edgeFilePath, cfreq, cinterval)
                 API.OptimizationConfig.mergedWorker()
                 val snapshot1 = API.Simulate(agents, totalTurns, role, port)
             }

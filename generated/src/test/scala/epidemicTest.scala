@@ -1,21 +1,16 @@
 package simulation.akka
 package test
 
-object epidemic {
+object epidemicsStandalone {
     def main(args: Array[String]): Unit = {
-        val edgeFilePath: String = args(0)
-        val totalTurns: Int = args(1).toInt
-        val mode: Int = args(2).toInt
-        val cfreq: Int = args(3).toInt
-        val cinterval: Int = args(4).toInt
+        val edgeFile: String = args(0)
+        val mode: Int = args(1).toInt
+        val cfreq: Int = args(2).toInt
+        val cinterval: Int = args(3).toInt
 
+        val totalTurns: Int = 50
         var role: String = "Standalone"
         var port: Int = 25251
-
-        if (args.size > 6) {
-            role = args(5)
-            port = args(6).toInt
-        }
 
         mode match {
             case 1 => {
@@ -36,20 +31,29 @@ object epidemic {
                 API.OptimizationConfig.mergedWorker()
                 val snapshot1 = API.Simulate(agents, totalTurns, role, port)
             }
+        }
+    }
+}
 
-            case 4 => {
-                // v4, partial materialized workers
-                if (role == "Driver") {
-                    API.Simulate.driver(totalTurns)
-                } else if (role.startsWith("Machine-")){
-                    val mid = role.stripPrefix("Machine-").toInt
-                    val totalMachines = blocks
-                    meta.runtime.Actor.lastAgentId = mid * population
-                    val agents = generated.example.epidemic.v4.InitData(population, p, isSBM, totalMachines)
-                    API.OptimizationConfig.mergedWorker()
-                    API.Simulate.machine(mid, agents, totalTurns)
-                }
-            }
+object epidemicsDistributed {
+        def main(args: Array[String]): Unit = {
+        val population: Int = args(0).toInt
+        val isSBM: Boolean = (args(1).toInt == 1)
+        val totalMachines: Int = args(2).toInt
+        var role: String = args(3)
+        var port: Int = args(4).toInt
+        val totalTurns: Int = 50
+
+        // v4, partial materialized workers
+        if (role == "Driver") {
+            API.Simulate.driver(totalTurns)
+        } else if (role.startsWith("Machine-")){
+            val mid = role.stripPrefix("Machine-").toInt
+            // Set the agent counter to agents that belong to this machine
+            meta.runtime.Actor.lastAgentId = mid * population
+            val agents = generated.example.epidemic.v4.InitData(population, 0.01, isSBM, totalMachines)
+            API.OptimizationConfig.mergedWorker()
+            API.Simulate.machine(mid, agents, totalTurns)
         }
     }
 }
