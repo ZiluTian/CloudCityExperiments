@@ -1,0 +1,24 @@
+{
+    "experiments": ["gameOfLife", "ERM", "SBM"],
+    "mode": "1",
+    "gameOfLife": {
+        "input_graph": ["/root/FlinkExperiments/data/2DTorus_1000_graphx.txt", "/root/FlinkExperiments/data/2DTorus_5000_graphx.txt", "/root/FlinkExperiments/data/2DTorus_10000_graphx.txt", 
+        "/root/FlinkExperiments/data/2DTorus_50000_graphx.txt", "/root/FlinkExperiments/data/2DTorus_100000_graphx.txt"],
+        "classpath": "simulation.akka.test.gameOfLifeStandalone"
+    },
+    "ERM": {
+        "input_graph": ["/root/FlinkExperiments/data/ERM_0.01_1000_graphx.txt", "/root/FlinkExperiments/data/ERM_0.01_5000_graphx.txt", "/root/FlinkExperiments/data/ERM_0.01_10000_graphx.txt",
+        "/root/FlinkExperiments/data/ERM_0.01_50000_graphx.txt", "/root/FlinkExperiments/data/ERM_0.01_100000_graphx.txt"],
+        "classpath":  "simulation.akka.test.epidemicsStandalone"
+    },
+    "SBM": {
+        "input_graph": ["/root/FlinkExperiments/data/SBM_0.01_1000_graphx.txt", "/root/FlinkExperiments/data/SBM_0.01_5000_graphx.txt", "/root/FlinkExperiments/data/SBM_0.01_10000_graphx.txt",
+        "/root/FlinkExperiments/data/SBM_0.01_50000_graphx.txt", "/root/FlinkExperiments/data/SBM_0.01_100000_graphx.txt"],
+        "classpath":  "simulation.akka.test.epidemicsStandalone"
+    },
+    "cfreqs": [1],
+    "cinterval": [1],
+    "cores": [50],
+    "log_dir": "log",
+    "repeat": 3
+}

@@ -1,0 +1,21 @@
+{
+    "experiments": ["gameOfLife", "ERM", "SBM"],
+    "mode": "1",
+    "gameOfLife": {
+        "input_graph": ["/root/FlinkExperiments/data/2DTorus_10000_graphx.txt"],
+        "classpath": "simulation.akka.test.gameOfLifeStandalone"
+    },
+    "ERM": {
+        "input_graph": ["/root/FlinkExperiments/data/ERM_0.01_10000_graphx.txt"],
+        "classpath": "simulation.akka.test.epidemicsStandalone"
+    },
+    "SBM": {
+        "input_graph": ["/root/FlinkExperiments/data/SBM_0.01_10000_graphx.txt"],
+        "classpath": "simulation.akka.test.epidemicsStandalone"
+    },
+    "cfreqs": [1],
+    "cinterval": [5, 10, 20],
+    "cores": [50],
+    "log_dir": "log",
+    "repeat": 3
+}
