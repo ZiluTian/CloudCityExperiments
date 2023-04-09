@@ -1,0 +1,49 @@
+#stockmarket
+21:38:06.085 [SimsCluster-akka.actor.default-dispatcher-25] INFO  simulation.akka.core.Driver - Average 77 ms
+21:38:28.756 [SimsCluster-akka.actor.default-dispatcher-54] INFO  simulation.akka.core.Driver - Average 106 ms
+21:38:59.064 [SimsCluster-akka.actor.default-dispatcher-57] INFO  simulation.akka.core.Driver - Average 145 ms
+
+21:41:29.627 [SimsCluster-akka.actor.default-dispatcher-54] INFO  simulation.akka.core.Driver - Average 76 ms
+21:41:52.842 [SimsCluster-akka.actor.default-dispatcher-25] INFO  simulation.akka.core.Driver - Average 108 ms
+21:42:23.647 [SimsCluster-akka.actor.default-dispatcher-45] INFO  simulation.akka.core.Driver - Average 148 ms
+
+21:43:36.872 [SimsCluster-akka.actor.default-dispatcher-23] INFO  simulation.akka.core.Driver - Average 80 ms
+21:44:00.233 [SimsCluster-akka.actor.default-dispatcher-14] INFO  simulation.akka.core.Driver - Average 109 ms
+21:44:31.566 [SimsCluster-akka.actor.default-dispatcher-16] INFO  simulation.akka.core.Driver - Average 150 ms
+
+log/1/commFreq_ERM_cores50_cfreq10_cint1_214859:21:49:15.898 [SimsCluster-akka.actor.default-dispatcher-24] INFO  simulation.akka.core.Driver - Average 46 ms
+log/1/commFreq_ERM_cores50_cfreq20_cint1_214955:21:50:13.268 [SimsCluster-akka.actor.default-dispatcher-45] INFO  simulation.akka.core.Driver - Average 68 ms
+log/1/commFreq_ERM_cores50_cfreq30_cint1_213543:21:36:02.063 [SimsCluster-akka.actor.default-dispatcher-40] INFO  simulation.akka.core.Driver - Average 85 ms
+
+log/1/commFreq_ERM_cores50_cfreq10_cint1_215838:21:58:55.666 [SimsCluster-akka.actor.default-dispatcher-25] INFO  simulation.akka.core.Driver - Average 45 ms
+log/1/commFreq_ERM_cores50_cfreq20_cint1_215856:21:59:14.389 [SimsCluster-akka.actor.default-dispatcher-59] INFO  simulation.akka.core.Driver - Average 61 ms
+log/1/commFreq_ERM_cores50_cfreq30_cint1_215915:21:59:34.490 [SimsCluster-akka.actor.default-dispatcher-46] INFO  simulation.akka.core.Driver - Average 92 ms
+
+log/0/commFreq_ERM_cores50_cfreq10_cint1_211806:21:18:24.832 [SimsCluster-akka.actor.default-dispatcher-61] INFO  simulation.akka.core.Driver - Average 65 ms
+log/0/commFreq_ERM_cores50_cfreq20_cint1_214704:21:47:22.241 [SimsCluster-akka.actor.default-dispatcher-68] INFO  simulation.akka.core.Driver - Average 77 ms
+log/0/commFreq_ERM_cores50_cfreq30_cint1_213444:21:35:04.130 [SimsCluster-akka.actor.default-dispatcher-49] INFO  simulation.akka.core.Driver - Average 87 ms
+
+
+log/0/commFreq_gameOfLife_cores50_cfreq10_cint1_211746:21:18:04.818 [SimsCluster-akka.actor.default-dispatcher-40] INFO  simulation.akka.core.Driver - Average 18 ms
+log/0/commFreq_gameOfLife_cores50_cfreq20_cint1_211842:21:19:02.931 [SimsCluster-akka.actor.default-dispatcher-31] INFO  simulation.akka.core.Driver - Average 27 ms
+log/0/commFreq_gameOfLife_cores50_cfreq30_cint1_214740:21:48:01.837 [SimsCluster-akka.actor.default-dispatcher-47] INFO  simulation.akka.core.Driver - Average 31 ms
+
+log/0/commFreq_gameOfLife_cores50_cfreq10_cint1_214526:21:46:04.520 [SimsCluster-akka.actor.default-dispatcher-26] INFO  simulation.akka.core.Driver - Average 19 ms
+log/0/commFreq_gameOfLife_cores50_cfreq20_cint1_214642:21:47:03.246 [SimsCluster-akka.actor.default-dispatcher-55] INFO  simulation.akka.core.Driver - Average 25 ms
+log/0/commFreq_gameOfLife_cores50_cfreq30_cint1_213403:21:34:43.647 [SimsCluster-akka.actor.default-dispatcher-53] INFO  simulation.akka.core.Driver - Average 34 ms
+
+log/1/commFreq_gameOfLife_cores50_cfreq10_cint1_214839:21:48:57.969 [SimsCluster-akka.actor.default-dispatcher-28] INFO  simulation.akka.core.Driver - Average 18 ms
+log/1/commFreq_gameOfLife_cores50_cfreq20_cint1_214933:21:49:53.956 [SimsCluster-akka.actor.default-dispatcher-59] INFO  simulation.akka.core.Driver - Average 30 ms
+log/1/commFreq_gameOfLife_cores50_cfreq30_cint1_213521:21:35:42.363 [SimsCluster-akka.actor.default-dispatcher-41] INFO  simulation.akka.core.Driver - Average 31 ms
+
+log/0/commFreq_SBM_cores50_cfreq10_cint1_211825:21:18:41.452 [SimsCluster-akka.actor.default-dispatcher-68] INFO  simulation.akka.core.Driver - Average 26 ms
+log/0/commFreq_SBM_cores50_cfreq20_cint1_214723:21:47:39.025 [SimsCluster-akka.actor.default-dispatcher-38] INFO  simulation.akka.core.Driver - Average 28 ms
+log/1/commFreq_SBM_cores50_cfreq30_cint1_215114:21:51:30.311 [SimsCluster-akka.actor.default-dispatcher-45] INFO  simulation.akka.core.Driver - Average 30 ms
+
+log/0/commFreq_SBM_cores50_cfreq10_cint1_214626:21:46:41.838 [SimsCluster-akka.actor.default-dispatcher-38] INFO  simulation.akka.core.Driver - Average 26 ms
+log/0/commFreq_SBM_cores50_cfreq20_cint1_211924:21:19:39.868 [SimsCluster-akka.actor.default-dispatcher-38] INFO  simulation.akka.core.Driver - Average 27 ms
+log/0/commFreq_SBM_cores50_cfreq30_cint1_214822:21:48:38.292 [SimsCluster-akka.actor.default-dispatcher-21] INFO  simulation.akka.core.Driver - Average 33 ms
+
+log/1/commFreq_SBM_cores50_cfreq10_cint1_214917:21:49:31.910 [SimsCluster-akka.actor.default-dispatcher-5] INFO  simulation.akka.core.Driver - Average 20 ms
+log/1/commFreq_SBM_cores50_cfreq20_cint1_215014:21:50:29.908 [SimsCluster-akka.actor.default-dispatcher-28] INFO  simulation.akka.core.Driver - Average 27 ms
+log/1/commFreq_SBM_cores50_cfreq30_cint1_213603:21:36:18.270 [SimsCluster-akka.actor.default-dispatcher-26] INFO  simulation.akka.core.Driver - Average 32 ms
