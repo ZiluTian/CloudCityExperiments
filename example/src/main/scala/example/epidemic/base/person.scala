@@ -4,7 +4,7 @@ package epidemic.base
 import scala.util.Random
 import meta.classLifting.SpecialInstructions._
 import squid.quasi.lift
-import meta.runtime.Message
+import meta.runtime._
 import example.epidemic._
 
 @lift
@@ -13,6 +13,9 @@ class Person(val age: Int, val cfreq: Int, val interval: Int) extends Actor {
     var health: Int = 0
     var vulnerability: Int = 0
     var daysInfected: Int = 0
+    var personalRisk: Double = 0
+    var selfRisk: Double = 0
+    var m: Option[Array[Byte]] = None
 
     def main(): Unit = {
         vulnerability = if (age > 60) 1 else 0
@@ -22,10 +25,10 @@ class Person(val age: Int, val cfreq: Int, val interval: Int) extends Actor {
 
         while (true) {
             if (health != SIRModel.Deceased) {
-                var m = receiveMessage()
+                m = receiveMessage()
                 while (m.isDefined){
                     if (health == 0) {
-                        var personalRisk = m.get.value
+                        personalRisk = DoubleMessage.fromBinary(m.get)
                         if (age > 60) {
                             personalRisk = personalRisk * 2
                         }
@@ -38,12 +41,10 @@ class Person(val age: Int, val cfreq: Int, val interval: Int) extends Actor {
 
                 // Meet with contacts 
                 if (health == SIRModel.Infectious) {
-                    val selfRisk = SIRModel.infectiousness(health, symptomatic)
+                    selfRisk = SIRModel.infectiousness(health, symptomatic)
                     connectedAgentIds.foreach(i => {
-                        sendMessages.getOrElseUpdate(i, new ListBuffer[Message]()).appendAll(Range(0, cfreq).map(i => {
-                            val msg = new Message()
-                            msg.value = selfRisk
-                            msg
+                        sendMessages.getOrElseUpdate(i, new ListBuffer[Array[Byte]]()).appendAll(Range(0, cfreq).map(i => {
+                            (new DoubleMessage(selfRisk)).toBinary
                         }))
                     })
                 }

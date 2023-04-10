@@ -1,6 +1,9 @@
 package simulation.akka
 package test
 
+import cloudcity.lib.Graph.LoadGraph
+import scala.util.Random
+
 object epidemicsStandalone {
     def main(args: Array[String]): Unit = {
         val edgeFile: String = args(0)
@@ -19,26 +22,26 @@ object epidemicsStandalone {
                 val snapshot1 = API.Simulate(agents, totalTurns, role, port)
             }
 
-            case 2=> {
-                // Generalized double-buffering, with delayed processing 
-                val agents = generated.example.epidemic.dma.InitData(edgeFile)
-                API.OptimizationConfig.mergedWorker()
-                val snapshot1 = API.Simulate(agents, totalTurns, role, port)
-            }
+            // case 2=> {
+            //     // Generalized double-buffering, with delayed processing 
+            //     val agents = generated.example.epidemic.dma.InitData(edgeFile)
+            //     API.OptimizationConfig.mergedWorker()
+            //     val snapshot1 = API.Simulate(agents, totalTurns, role, port)
+            // }
 
-            case 3 => {
-                val agents = generated.example.epidemic.nodma.InitData(edgeFile)
-                API.OptimizationConfig.mergedWorker()
-                val snapshot1 = API.Simulate(agents, totalTurns, role, port)
-            }
+            // case 3 => {
+            //     val agents = generated.example.epidemic.nodma.InitData(edgeFile)
+            //     API.OptimizationConfig.mergedWorker()
+            //     val snapshot1 = API.Simulate(agents, totalTurns, role, port)
+            // }
         }
     }
 }
 
-object epidemicsDistributed {
-        def main(args: Array[String]): Unit = {
-        val population: Int = args(0).toInt
-        val isSBM: Boolean = (args(1).toInt == 1)
+object ERMDistributed {
+    def main(args: Array[String]): Unit = {
+        val edgeFile: String = args(0)
+        val populationPerMachine: Int = args(1).toInt
         val totalMachines: Int = args(2).toInt
         var role: String = args(3)
         var port: Int = args(4).toInt
@@ -48,12 +51,21 @@ object epidemicsDistributed {
         if (role == "Driver") {
             API.Simulate.driver(totalTurns)
         } else if (role.startsWith("Machine-")){
-            val mid = role.stripPrefix("Machine-").toInt
             // Set the agent counter to agents that belong to this machine
-            meta.runtime.Actor.lastAgentId = mid * population
-            val agents = generated.example.epidemic.v4.InitData(population, 0.01, isSBM, totalMachines)
+            val edges = LoadGraph(edgeFile)
+
+            val mid = role.stripPrefix("Machine-").toInt
+            meta.runtime.Actor.lastAgentId = mid * populationPerMachine
+            val citizens = (1 to populationPerMachine).map(c => { 
+                new generated.example.epidemic.base.Person(Random.nextInt(90) + 10, 1, 1) 
+            })
+
+            citizens.foreach(c => {
+                c.connectedAgentIds = edges(c.id)
+            })
+
             API.OptimizationConfig.mergedWorker()
-            API.Simulate.machine(mid, agents, totalTurns)
+            API.Simulate.machine(mid, citizens.toList, totalTurns)
         }
     }
 }
