@@ -1,0 +1,895 @@
+[info] welcome to sbt 1.4.7 (Red Hat, Inc. Java 1.8.0_362)
+[info] loading settings for project cloudcityexperiments-build from plugins.sbt ...
+[info] loading project definition from /root/CloudCityExperiments/project
+[info] loading settings for project cloudcityexperiments from build.sbt ...
+[info] set current project to CloudCityExperiments (in build file:/root/CloudCityExperiments/)
+[info] set current project to CloudCityExperiments-genExample (in build file:/root/CloudCityExperiments/)
+[warn] multiple main classes detected: run 'show discoveredMainClasses' to see the list
+[warn] multiple main classes detected: run 'show discoveredMainClasses' to see the list
+[info] running simulation.akka.test.gameOfLifeStandalone 2
+1 total machines, 50 total workers, and 10000 actors
+19:48:17,041 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.xml]
+19:48:17,042 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback.groovy]
+19:48:17,042 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Found resource [logback.xml] at [jar:file:/root/CloudCityExperiments/target/bg-jobs/sbt_c0e79cf7/target/ca39e881/25a320d5/cloudcityexperiments-genexample_2.12-0.1.0-SNAPSHOT.jar!/logback.xml]
+19:48:17,042 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback.xml] occurs multiple times on the classpath.
+19:48:17,042 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback.xml] occurs at [jar:file:/root/CloudCityExperiments/target/bg-jobs/sbt_c0e79cf7/target/ca39e881/25a320d5/cloudcityexperiments-genexample_2.12-0.1.0-SNAPSHOT.jar!/logback.xml]
+19:48:17,042 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback.xml] occurs at [jar:file:/root/CloudCityExperiments/target/bg-jobs/sbt_c0e79cf7/target/bdd74f61/84f976f3/cloudcity-akka_2.12.jar!/logback.xml]
+19:48:17,062 |-INFO in ch.qos.logback.core.joran.spi.ConfigurationWatchList@224f2850 - URL [jar:file:/root/CloudCityExperiments/target/bg-jobs/sbt_c0e79cf7/target/ca39e881/25a320d5/cloudcityexperiments-genexample_2.12-0.1.0-SNAPSHOT.jar!/logback.xml] is not of type file
+19:48:17,095 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - debug attribute not set
+19:48:17,096 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+19:48:17,104 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [STDOUT]
+19:48:17,110 |-INFO in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+19:48:17,135 |-INFO in ch.qos.logback.classic.joran.action.RootLoggerAction - Setting level of ROOT logger to INFO
+19:48:17,135 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [STDOUT] to Logger[ROOT]
+19:48:17,136 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - End of configuration.
+19:48:17,137 |-INFO in ch.qos.logback.classic.joran.JoranConfigurator@2d52d835 - Registering current configuration as safe fallback point
+
+19:48:17.142 [SimsCluster-akka.actor.default-dispatcher-6] INFO  akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+19:48:17.714 [SimsCluster-akka.actor.default-dispatcher-6] INFO  a.r.artery.tcp.ArteryTcpTransport - Remoting started with transport [Artery tcp]; listening on address [akka://SimsCluster@10.90.39.8:25251] with UID [9095984819786363680]
+19:48:17.753 [SimsCluster-akka.actor.default-dispatcher-6] INFO  akka.cluster.Cluster - Cluster Node [akka://SimsCluster@10.90.39.8:25251] - Starting up, Akka version [2.6.14] ...
+19:48:17.930 [SimsCluster-akka.actor.default-dispatcher-6] INFO  akka.cluster.Cluster - Cluster Node [akka://SimsCluster@10.90.39.8:25251] - Registered cluster JMX MBean [akka:type=Cluster]
+19:48:17.930 [SimsCluster-akka.actor.default-dispatcher-6] INFO  akka.cluster.Cluster - Cluster Node [akka://SimsCluster@10.90.39.8:25251] - Started up successfully
+19:48:17.994 [SimsCluster-akka.actor.default-dispatcher-6] INFO  akka.cluster.sbr.SplitBrainResolver - SBR started. Config: strategy [KeepMajority], stable-after [20 seconds], down-all-when-unstable [15 seconds], selfUniqueAddress [akka://SimsCluster@10.90.39.8:25251#9095984819786363680], selfDc [default].
+19:48:18.004 [SimsCluster-akka.actor.default-dispatcher-3] INFO  akka.cluster.Cluster - Cluster Node [akka://SimsCluster@10.90.39.8:25251] - Node [akka://SimsCluster@10.90.39.8:25251] is JOINING itself (with roles [Standalone, dc-default], version [0.0.0]) and forming new cluster
+19:48:18.006 [SimsCluster-akka.actor.default-dispatcher-3] INFO  akka.cluster.Cluster - Cluster Node [akka://SimsCluster@10.90.39.8:25251] - is the new leader among reachable nodes (more leaders may exist)
+19:48:18.015 [SimsCluster-akka.actor.default-dispatcher-3] INFO  akka.cluster.Cluster - Cluster Node [akka://SimsCluster@10.90.39.8:25251] - Leader is moving node [akka://SimsCluster@10.90.39.8:25251] to [Up]
+19:48:18.043 [SimsCluster-akka.actor.default-dispatcher-6] INFO  akka.cluster.sbr.SplitBrainResolver - This node is now the leader responsible for taking SBR decisions among the reachable nodes (more leaders may exist).
+19:48:19.995 [SimsCluster-akka.actor.default-dispatcher-29] INFO  simulation.akka.core.Driver - Round 1 takes 176 ms
+19:48:20.103 [SimsCluster-akka.actor.default-dispatcher-48] INFO  simulation.akka.core.Driver - Round 2 takes 108 ms
+19:48:20.140 [SimsCluster-akka.actor.default-dispatcher-43] INFO  simulation.akka.core.Driver - Round 3 takes 37 ms
+19:48:20.162 [SimsCluster-akka.actor.default-dispatcher-51] INFO  simulation.akka.core.Driver - Round 4 takes 21 ms
+19:48:20.183 [SimsCluster-akka.actor.default-dispatcher-63] INFO  simulation.akka.core.Driver - Round 5 takes 21 ms
+19:48:20.203 [SimsCluster-akka.actor.default-dispatcher-34] INFO  simulation.akka.core.Driver - Round 6 takes 20 ms
+19:48:20.223 [SimsCluster-akka.actor.default-dispatcher-46] INFO  simulation.akka.core.Driver - Round 7 takes 19 ms
+19:48:20.242 [SimsCluster-akka.actor.default-dispatcher-56] INFO  simulation.akka.core.Driver - Round 8 takes 19 ms
+19:48:20.263 [SimsCluster-akka.actor.default-dispatcher-39] INFO  simulation.akka.core.Driver - Round 9 takes 21 ms
+19:48:20.281 [SimsCluster-akka.actor.default-dispatcher-66] INFO  simulation.akka.core.Driver - Round 10 takes 18 ms
+19:48:20.300 [SimsCluster-akka.actor.default-dispatcher-37] INFO  simulation.akka.core.Driver - Round 11 takes 19 ms
+19:48:20.319 [SimsCluster-akka.actor.default-dispatcher-69] INFO  simulation.akka.core.Driver - Round 12 takes 19 ms
+19:48:20.333 [SimsCluster-akka.actor.default-dispatcher-60] INFO  simulation.akka.core.Driver - Round 13 takes 14 ms
+19:48:20.348 [SimsCluster-akka.actor.default-dispatcher-65] INFO  simulation.akka.core.Driver - Round 14 takes 14 ms
+19:48:20.365 [SimsCluster-akka.actor.default-dispatcher-56] INFO  simulation.akka.core.Driver - Round 15 takes 17 ms
+19:48:20.379 [SimsCluster-akka.actor.default-dispatcher-3] INFO  simulation.akka.core.Driver - Round 16 takes 14 ms
+19:48:20.392 [SimsCluster-akka.actor.default-dispatcher-31] INFO  simulation.akka.core.Driver - Round 17 takes 13 ms
+19:48:20.405 [SimsCluster-akka.actor.default-dispatcher-34] INFO  simulation.akka.core.Driver - Round 18 takes 12 ms
+19:48:20.419 [SimsCluster-akka.actor.default-dispatcher-54] INFO  simulation.akka.core.Driver - Round 19 takes 12 ms
+19:48:20.432 [SimsCluster-akka.actor.default-dispatcher-29] INFO  simulation.akka.core.Driver - Round 20 takes 13 ms
+19:48:20.445 [SimsCluster-akka.actor.default-dispatcher-61] INFO  simulation.akka.core.Driver - Round 21 takes 13 ms
+19:48:20.459 [SimsCluster-akka.actor.default-dispatcher-3] INFO  simulation.akka.core.Driver - Round 22 takes 14 ms
+19:48:20.471 [SimsCluster-akka.actor.default-dispatcher-26] INFO  simulation.akka.core.Driver - Round 23 takes 11 ms
+19:48:20.482 [SimsCluster-akka.actor.default-dispatcher-40] INFO  simulation.akka.core.Driver - Round 24 takes 11 ms
+19:48:20.493 [SimsCluster-akka.actor.default-dispatcher-47] INFO  simulation.akka.core.Driver - Round 25 takes 11 ms
+19:48:20.503 [SimsCluster-akka.actor.default-dispatcher-45] INFO  simulation.akka.core.Driver - Round 26 takes 10 ms
+19:48:20.513 [SimsCluster-akka.actor.default-dispatcher-44] INFO  simulation.akka.core.Driver - Round 27 takes 10 ms
+19:48:20.523 [SimsCluster-akka.actor.default-dispatcher-67] INFO  simulation.akka.core.Driver - Round 28 takes 10 ms
+19:48:20.534 [SimsCluster-akka.actor.default-dispatcher-64] INFO  simulation.akka.core.Driver - Round 29 takes 11 ms
+19:48:20.544 [SimsCluster-akka.actor.default-dispatcher-25] INFO  simulation.akka.core.Driver - Round 30 takes 10 ms
+19:48:20.555 [SimsCluster-akka.actor.default-dispatcher-65] INFO  simulation.akka.core.Driver - Round 31 takes 11 ms
+19:48:20.565 [SimsCluster-akka.actor.default-dispatcher-25] INFO  simulation.akka.core.Driver - Round 32 takes 10 ms
+19:48:20.576 [SimsCluster-akka.actor.default-dispatcher-51] INFO  simulation.akka.core.Driver - Round 33 takes 11 ms
+19:48:20.586 [SimsCluster-akka.actor.default-dispatcher-3] INFO  simulation.akka.core.Driver - Round 34 takes 10 ms
+19:48:20.596 [SimsCluster-akka.actor.default-dispatcher-48] INFO  simulation.akka.core.Driver - Round 35 takes 10 ms
+19:48:20.606 [SimsCluster-akka.actor.default-dispatcher-70] INFO  simulation.akka.core.Driver - Round 36 takes 10 ms
+19:48:20.616 [SimsCluster-akka.actor.default-dispatcher-25] INFO  simulation.akka.core.Driver - Round 37 takes 10 ms
+19:48:20.625 [SimsCluster-akka.actor.default-dispatcher-54] INFO  simulation.akka.core.Driver - Round 38 takes 8 ms
+19:48:20.635 [SimsCluster-akka.actor.default-dispatcher-25] INFO  simulation.akka.core.Driver - Round 39 takes 9 ms
+19:48:20.646 [SimsCluster-akka.actor.default-dispatcher-61] INFO  simulation.akka.core.Driver - Round 40 takes 10 ms
+19:48:20.655 [SimsCluster-akka.actor.default-dispatcher-6] INFO  simulation.akka.core.Driver - Round 41 takes 9 ms
+19:48:20.666 [SimsCluster-akka.actor.default-dispatcher-30] INFO  simulation.akka.core.Driver - Round 42 takes 10 ms
+19:48:20.675 [SimsCluster-akka.actor.default-dispatcher-34] INFO  simulation.akka.core.Driver - Round 43 takes 9 ms
+19:48:20.685 [SimsCluster-akka.actor.default-dispatcher-30] INFO  simulation.akka.core.Driver - Round 44 takes 10 ms
+19:48:20.694 [SimsCluster-akka.actor.default-dispatcher-53] INFO  simulation.akka.core.Driver - Round 45 takes 9 ms
+19:48:20.704 [SimsCluster-akka.actor.default-dispatcher-63] INFO  simulation.akka.core.Driver - Round 46 takes 10 ms
+19:48:20.713 [SimsCluster-akka.actor.default-dispatcher-25] INFO  simulation.akka.core.Driver - Round 47 takes 9 ms
+19:48:20.724 [SimsCluster-akka.actor.default-dispatcher-52] INFO  simulation.akka.core.Driver - Round 48 takes 10 ms
+19:48:20.733 [SimsCluster-akka.actor.default-dispatcher-27] INFO  simulation.akka.core.Driver - Round 49 takes 9 ms
+19:48:20.743 [SimsCluster-akka.actor.default-dispatcher-48] INFO  simulation.akka.core.Driver - Round 50 takes 10 ms
+19:48:20.753 [SimsCluster-akka.actor.default-dispatcher-24] INFO  simulation.akka.core.Driver - Round 51 takes 9 ms
+19:48:20.762 [SimsCluster-akka.actor.default-dispatcher-31] INFO  simulation.akka.core.Driver - Round 52 takes 9 ms
+19:48:20.772 [SimsCluster-akka.actor.default-dispatcher-24] INFO  simulation.akka.core.Driver - Round 53 takes 9 ms
+19:48:20.782 [SimsCluster-akka.actor.default-dispatcher-24] INFO  simulation.akka.core.Driver - Round 54 takes 10 ms
+19:48:20.792 [SimsCluster-akka.actor.default-dispatcher-38] INFO  simulation.akka.core.Driver - Round 55 takes 10 ms
+19:48:20.801 [SimsCluster-akka.actor.default-dispatcher-62] INFO  simulation.akka.core.Driver - Round 56 takes 9 ms
+19:48:20.810 [SimsCluster-akka.actor.default-dispatcher-57] INFO  simulation.akka.core.Driver - Round 57 takes 8 ms
+19:48:20.820 [SimsCluster-akka.actor.default-dispatcher-62] INFO  simulation.akka.core.Driver - Round 58 takes 9 ms
+19:48:20.829 [SimsCluster-akka.actor.default-dispatcher-45] INFO  simulation.akka.core.Driver - Round 59 takes 9 ms
+19:48:20.838 [SimsCluster-akka.actor.default-dispatcher-6] INFO  simulation.akka.core.Driver - Round 60 takes 9 ms
+19:48:20.848 [SimsCluster-akka.actor.default-dispatcher-37] INFO  simulation.akka.core.Driver - Round 61 takes 10 ms
+19:48:20.858 [SimsCluster-akka.actor.default-dispatcher-64] INFO  simulation.akka.core.Driver - Round 62 takes 10 ms
+19:48:20.867 [SimsCluster-akka.actor.default-dispatcher-68] INFO  simulation.akka.core.Driver - Round 63 takes 9 ms
+19:48:20.877 [SimsCluster-akka.actor.default-dispatcher-55] INFO  simulation.akka.core.Driver - Round 64 takes 10 ms
+19:48:20.887 [SimsCluster-akka.actor.default-dispatcher-24] INFO  simulation.akka.core.Driver - Round 65 takes 10 ms
+19:48:20.896 [SimsCluster-akka.actor.default-dispatcher-26] INFO  simulation.akka.core.Driver - Round 66 takes 9 ms
+19:48:20.906 [SimsCluster-akka.actor.default-dispatcher-32] INFO  simulation.akka.core.Driver - Round 67 takes 9 ms
+19:48:20.915 [SimsCluster-akka.actor.default-dispatcher-62] INFO  simulation.akka.core.Driver - Round 68 takes 9 ms
+19:48:20.925 [SimsCluster-akka.actor.default-dispatcher-43] INFO  simulation.akka.core.Driver - Round 69 takes 9 ms
+19:48:20.934 [SimsCluster-akka.actor.default-dispatcher-35] INFO  simulation.akka.core.Driver - Round 70 takes 9 ms
+19:48:20.944 [SimsCluster-akka.actor.default-dispatcher-38] INFO  simulation.akka.core.Driver - Round 71 takes 9 ms
+19:48:20.954 [SimsCluster-akka.actor.default-dispatcher-68] INFO  simulation.akka.core.Driver - Round 72 takes 10 ms
+19:48:20.963 [SimsCluster-akka.actor.default-dispatcher-34] INFO  simulation.akka.core.Driver - Round 73 takes 9 ms
+19:48:20.973 [SimsCluster-akka.actor.default-dispatcher-28] INFO  simulation.akka.core.Driver - Round 74 takes 9 ms
+19:48:20.983 [SimsCluster-akka.actor.default-dispatcher-64] INFO  simulation.akka.core.Driver - Round 75 takes 9 ms
+19:48:20.992 [SimsCluster-akka.actor.default-dispatcher-58] INFO  simulation.akka.core.Driver - Round 76 takes 9 ms
+19:48:21.002 [SimsCluster-akka.actor.default-dispatcher-44] INFO  simulation.akka.core.Driver - Round 77 takes 9 ms
+19:48:21.011 [SimsCluster-akka.actor.default-dispatcher-50] INFO  simulation.akka.core.Driver - Round 78 takes 9 ms
+19:48:21.021 [SimsCluster-akka.actor.default-dispatcher-52] INFO  simulation.akka.core.Driver - Round 79 takes 9 ms
+19:48:21.030 [SimsCluster-akka.actor.default-dispatcher-28] INFO  simulation.akka.core.Driver - Round 80 takes 9 ms
+19:48:21.040 [SimsCluster-akka.actor.default-dispatcher-67] INFO  simulation.akka.core.Driver - Round 81 takes 9 ms
+19:48:21.049 [SimsCluster-akka.actor.default-dispatcher-39] INFO  simulation.akka.core.Driver - Round 82 takes 9 ms
+19:48:21.060 [SimsCluster-akka.actor.default-dispatcher-24] INFO  simulation.akka.core.Driver - Round 83 takes 11 ms
+19:48:21.068 [SimsCluster-akka.actor.default-dispatcher-48] INFO  simulation.akka.core.Driver - Round 84 takes 8 ms
+19:48:21.076 [SimsCluster-akka.actor.default-dispatcher-38] INFO  simulation.akka.core.Driver - Round 85 takes 8 ms
+19:48:21.084 [SimsCluster-akka.actor.default-dispatcher-66] INFO  simulation.akka.core.Driver - Round 86 takes 8 ms
+19:48:21.093 [SimsCluster-akka.actor.default-dispatcher-58] INFO  simulation.akka.core.Driver - Round 87 takes 8 ms
+19:48:21.101 [SimsCluster-akka.actor.default-dispatcher-29] INFO  simulation.akka.core.Driver - Round 88 takes 8 ms
+19:48:21.110 [SimsCluster-akka.actor.default-dispatcher-41] INFO  simulation.akka.core.Driver - Round 89 takes 9 ms
+19:48:21.118 [SimsCluster-akka.actor.default-dispatcher-34] INFO  simulation.akka.core.Driver - Round 90 takes 8 ms
+19:48:21.126 [SimsCluster-akka.actor.default-dispatcher-24] INFO  simulation.akka.core.Driver - Round 91 takes 8 ms
+19:48:21.134 [SimsCluster-akka.actor.default-dispatcher-48] INFO  simulation.akka.core.Driver - Round 92 takes 8 ms
+19:48:21.142 [SimsCluster-akka.actor.default-dispatcher-57] INFO  simulation.akka.core.Driver - Round 93 takes 8 ms
+19:48:21.150 [SimsCluster-akka.actor.default-dispatcher-52] INFO  simulation.akka.core.Driver - Round 94 takes 8 ms
+19:48:21.158 [SimsCluster-akka.actor.default-dispatcher-42] INFO  simulation.akka.core.Driver - Round 95 takes 8 ms
+19:48:21.166 [SimsCluster-akka.actor.default-dispatcher-48] INFO  simulation.akka.core.Driver - Round 96 takes 8 ms
+19:48:21.174 [SimsCluster-akka.actor.default-dispatcher-34] INFO  simulation.akka.core.Driver - Round 97 takes 8 ms
+19:48:21.182 [SimsCluster-akka.actor.default-dispatcher-50] INFO  simulation.akka.core.Driver - Round 98 takes 8 ms
+19:48:21.191 [SimsCluster-akka.actor.default-dispatcher-29] INFO  simulation.akka.core.Driver - Round 99 takes 9 ms
+19:48:21.198 [SimsCluster-akka.actor.default-dispatcher-43] INFO  simulation.akka.core.Driver - Round 100 takes 7 ms
+19:48:21.207 [SimsCluster-akka.actor.default-dispatcher-67] INFO  simulation.akka.core.Driver - Round 101 takes 9 ms
+19:48:21.215 [SimsCluster-akka.actor.default-dispatcher-28] INFO  simulation.akka.core.Driver - Round 102 takes 8 ms
+19:48:21.223 [SimsCluster-akka.actor.default-dispatcher-47] INFO  simulation.akka.core.Driver - Round 103 takes 8 ms
+19:48:21.231 [SimsCluster-akka.actor.default-dispatcher-35] INFO  simulation.akka.core.Driver - Round 104 takes 8 ms
+19:48:21.241 [SimsCluster-akka.actor.default-dispatcher-54] INFO  simulation.akka.core.Driver - Round 105 takes 9 ms
+19:48:21.249 [SimsCluster-akka.actor.default-dispatcher-56] INFO  simulation.akka.core.Driver - Round 106 takes 8 ms
+19:48:21.258 [SimsCluster-akka.actor.default-dispatcher-47] INFO  simulation.akka.core.Driver - Round 107 takes 9 ms
+19:48:21.267 [SimsCluster-akka.actor.default-dispatcher-51] INFO  simulation.akka.core.Driver - Round 108 takes 8 ms
+19:48:21.277 [SimsCluster-akka.actor.default-dispatcher-47] INFO  simulation.akka.core.Driver - Round 109 takes 9 ms
+19:48:21.285 [SimsCluster-akka.actor.default-dispatcher-57] INFO  simulation.akka.core.Driver - Round 110 takes 8 ms
+19:48:21.293 [SimsCluster-akka.actor.default-dispatcher-57] INFO  simulation.akka.core.Driver - Round 111 takes 8 ms
+19:48:21.301 [SimsCluster-akka.actor.default-dispatcher-69] INFO  simulation.akka.core.Driver - Round 112 takes 8 ms
+19:48:21.309 [SimsCluster-akka.actor.default-dispatcher-38] INFO  simulation.akka.core.Driver - Round 113 takes 8 ms
+19:48:21.318 [SimsCluster-akka.actor.default-dispatcher-39] INFO  simulation.akka.core.Driver - Round 114 takes 8 ms
+19:48:21.326 [SimsCluster-akka.actor.default-dispatcher-3] INFO  simulation.akka.core.Driver - Round 115 takes 8 ms
+19:48:21.334 [SimsCluster-akka.actor.default-dispatcher-25] INFO  simulation.akka.core.Driver - Round 116 takes 8 ms
+19:48:21.342 [SimsCluster-akka.actor.default-dispatcher-25] INFO  simulation.akka.core.Driver - Round 117 takes 8 ms
+19:48:21.350 [SimsCluster-akka.actor.default-dispatcher-53] INFO  simulation.akka.core.Driver - Round 118 takes 8 ms
+19:48:21.358 [SimsCluster-akka.actor.default-dispatcher-43] INFO  simulation.akka.core.Driver - Round 119 takes 8 ms
+19:48:21.366 [SimsCluster-akka.actor.default-dispatcher-51] INFO  simulation.akka.core.Driver - Round 120 takes 8 ms
+19:48:21.374 [SimsCluster-akka.actor.default-dispatcher-42] INFO  simulation.akka.core.Driver - Round 121 takes 8 ms
+19:48:21.382 [SimsCluster-akka.actor.default-dispatcher-67] INFO  simulation.akka.core.Driver - Round 122 takes 8 ms
+19:48:21.390 [SimsCluster-akka.actor.default-dispatcher-60] INFO  simulation.akka.core.Driver - Round 123 takes 8 ms
+19:48:21.398 [SimsCluster-akka.actor.default-dispatcher-43] INFO  simulation.akka.core.Driver - Round 124 takes 8 ms
+19:48:21.407 [SimsCluster-akka.actor.default-dispatcher-26] INFO  simulation.akka.core.Driver - Round 125 takes 8 ms
+19:48:21.415 [SimsCluster-akka.actor.default-dispatcher-50] INFO  simulation.akka.core.Driver - Round 126 takes 8 ms
+19:48:21.423 [SimsCluster-akka.actor.default-dispatcher-42] INFO  simulation.akka.core.Driver - Round 127 takes 8 ms
+19:48:21.432 [SimsCluster-akka.actor.default-dispatcher-69] INFO  simulation.akka.core.Driver - Round 128 takes 9 ms
+19:48:21.440 [SimsCluster-akka.actor.default-dispatcher-48] INFO  simulation.akka.core.Driver - Round 129 takes 8 ms
+19:48:21.448 [SimsCluster-akka.actor.default-dispatcher-3] INFO  simulation.akka.core.Driver - Round 130 takes 7 ms
+19:48:21.457 [SimsCluster-akka.actor.default-dispatcher-62] INFO  simulation.akka.core.Driver - Round 131 takes 8 ms
+19:48:21.465 [SimsCluster-akka.actor.default-dispatcher-3] INFO  simulation.akka.core.Driver - Round 132 takes 8 ms
+19:48:21.473 [SimsCluster-akka.actor.default-dispatcher-30] INFO  simulation.akka.core.Driver - Round 133 takes 8 ms
+19:48:21.482 [SimsCluster-akka.actor.default-dispatcher-61] INFO  simulation.akka.core.Driver - Round 134 takes 8 ms
+19:48:21.490 [SimsCluster-akka.actor.default-dispatcher-35] INFO  simulation.akka.core.Driver - Round 135 takes 7 ms
+19:48:21.498 [SimsCluster-akka.actor.default-dispatcher-27] INFO  simulation.akka.core.Driver - Round 136 takes 8 ms
+19:48:21.507 [SimsCluster-akka.actor.default-dispatcher-52] INFO  simulation.akka.core.Driver - Round 137 takes 8 ms
+19:48:21.514 [SimsCluster-akka.actor.default-dispatcher-44] INFO  simulation.akka.core.Driver - Round 138 takes 7 ms
+19:48:21.523 [SimsCluster-akka.actor.default-dispatcher-53] INFO  simulation.akka.core.Driver - Round 139 takes 8 ms
+19:48:21.531 [SimsCluster-akka.actor.default-dispatcher-62] INFO  simulation.akka.core.Driver - Round 140 takes 8 ms
+19:48:21.539 [SimsCluster-akka.actor.default-dispatcher-29] INFO  simulation.akka.core.Driver - Round 141 takes 8 ms
+19:48:21.546 [SimsCluster-akka.actor.default-dispatcher-50] INFO  simulation.akka.core.Driver - Round 142 takes 7 ms
+19:48:21.554 [SimsCluster-akka.actor.default-dispatcher-29] INFO  simulation.akka.core.Driver - Round 143 takes 8 ms
+19:48:21.562 [SimsCluster-akka.actor.default-dispatcher-49] INFO  simulation.akka.core.Driver - Round 144 takes 7 ms
+19:48:21.571 [SimsCluster-akka.actor.default-dispatcher-3] INFO  simulation.akka.core.Driver - Round 145 takes 8 ms
+19:48:21.579 [SimsCluster-akka.actor.default-dispatcher-32] INFO  simulation.akka.core.Driver - Round 146 takes 8 ms
+19:48:21.588 [SimsCluster-akka.actor.default-dispatcher-52] INFO  simulation.akka.core.Driver - Round 147 takes 9 ms
+19:48:21.596 [SimsCluster-akka.actor.default-dispatcher-44] INFO  simulation.akka.core.Driver - Round 148 takes 8 ms
+19:48:21.604 [SimsCluster-akka.actor.default-dispatcher-69] INFO  simulation.akka.core.Driver - Round 149 takes 8 ms
+19:48:21.611 [SimsCluster-akka.actor.default-dispatcher-47] INFO  simulation.akka.core.Driver - Round 150 takes 7 ms
+19:48:21.619 [SimsCluster-akka.actor.default-dispatcher-26] INFO  simulation.akka.core.Driver - Round 151 takes 8 ms
+19:48:21.628 [SimsCluster-akka.actor.default-dispatcher-3] INFO  simulation.akka.core.Driver - Round 152 takes 8 ms
+19:48:21.636 [SimsCluster-akka.actor.default-dispatcher-55] INFO  simulation.akka.core.Driver - Round 153 takes 8 ms
+19:48:21.644 [SimsCluster-akka.actor.default-dispatcher-59] INFO  simulation.akka.core.Driver - Round 154 takes 8 ms
+19:48:21.652 [SimsCluster-akka.actor.default-dispatcher-44] INFO  simulation.akka.core.Driver - Round 155 takes 8 ms
+19:48:21.660 [SimsCluster-akka.actor.default-dispatcher-49] INFO  simulation.akka.core.Driver - Round 156 takes 8 ms
+19:48:21.668 [SimsCluster-akka.actor.default-dispatcher-26] INFO  simulation.akka.core.Driver - Round 157 takes 8 ms
+19:48:21.677 [SimsCluster-akka.actor.default-dispatcher-58] INFO  simulation.akka.core.Driver - Round 158 takes 9 ms
+19:48:21.685 [SimsCluster-akka.actor.default-dispatcher-37] INFO  simulation.akka.core.Driver - Round 159 takes 8 ms
+19:48:21.693 [SimsCluster-akka.actor.default-dispatcher-25] INFO  simulation.akka.core.Driver - Round 160 takes 8 ms
+19:48:21.701 [SimsCluster-akka.actor.default-dispatcher-42] INFO  simulation.akka.core.Driver - Round 161 takes 8 ms
+19:48:21.709 [SimsCluster-akka.actor.default-dispatcher-64] INFO  simulation.akka.core.Driver - Round 162 takes 8 ms
+19:48:21.717 [SimsCluster-akka.actor.default-dispatcher-3] INFO  simulation.akka.core.Driver - Round 163 takes 8 ms
+19:48:21.725 [SimsCluster-akka.actor.default-dispatcher-67] INFO  simulation.akka.core.Driver - Round 164 takes 8 ms
+19:48:21.733 [SimsCluster-akka.actor.default-dispatcher-50] INFO  simulation.akka.core.Driver - Round 165 takes 8 ms
+19:48:21.740 [SimsCluster-akka.actor.default-dispatcher-30] INFO  simulation.akka.core.Driver - Round 166 takes 7 ms
+19:48:21.748 [SimsCluster-akka.actor.default-dispatcher-36] INFO  simulation.akka.core.Driver - Round 167 takes 8 ms
+19:48:21.756 [SimsCluster-akka.actor.default-dispatcher-37] INFO  simulation.akka.core.Driver - Round 168 takes 8 ms
+19:48:21.764 [SimsCluster-akka.actor.default-dispatcher-65] INFO  simulation.akka.core.Driver - Round 169 takes 8 ms
+19:48:21.772 [SimsCluster-akka.actor.default-dispatcher-30] INFO  simulation.akka.core.Driver - Round 170 takes 8 ms
+19:48:21.781 [SimsCluster-akka.actor.default-dispatcher-40] INFO  simulation.akka.core.Driver - Round 171 takes 9 ms
+19:48:21.789 [SimsCluster-akka.actor.default-dispatcher-57] INFO  simulation.akka.core.Driver - Round 172 takes 8 ms
+19:48:21.798 [SimsCluster-akka.actor.default-dispatcher-59] INFO  simulation.akka.core.Driver - Round 173 takes 8 ms
+19:48:21.809 [SimsCluster-akka.actor.default-dispatcher-59] INFO  simulation.akka.core.Driver - Round 174 takes 10 ms
+19:48:21.819 [SimsCluster-akka.actor.default-dispatcher-51] INFO  simulation.akka.core.Driver - Round 175 takes 9 ms
+19:48:21.827 [SimsCluster-akka.actor.default-dispatcher-47] INFO  simulation.akka.core.Driver - Round 176 takes 8 ms
+19:48:21.836 [SimsCluster-akka.actor.default-dispatcher-60] INFO  simulation.akka.core.Driver - Round 177 takes 9 ms
+19:48:21.843 [SimsCluster-akka.actor.default-dispatcher-47] INFO  simulation.akka.core.Driver - Round 178 takes 7 ms
+19:48:21.852 [SimsCluster-akka.actor.default-dispatcher-47] INFO  simulation.akka.core.Driver - Round 179 takes 8 ms
+19:48:21.860 [SimsCluster-akka.actor.default-dispatcher-60] INFO  simulation.akka.core.Driver - Round 180 takes 8 ms
+19:48:21.868 [SimsCluster-akka.actor.default-dispatcher-65] INFO  simulation.akka.core.Driver - Round 181 takes 8 ms
+19:48:21.877 [SimsCluster-akka.actor.default-dispatcher-40] INFO  simulation.akka.core.Driver - Round 182 takes 8 ms
+19:48:21.886 [SimsCluster-akka.actor.default-dispatcher-65] INFO  simulation.akka.core.Driver - Round 183 takes 9 ms
+19:48:21.895 [SimsCluster-akka.actor.default-dispatcher-53] INFO  simulation.akka.core.Driver - Round 184 takes 9 ms
+19:48:21.904 [SimsCluster-akka.actor.default-dispatcher-59] INFO  simulation.akka.core.Driver - Round 185 takes 9 ms
+19:48:21.911 [SimsCluster-akka.actor.default-dispatcher-38] INFO  simulation.akka.core.Driver - Round 186 takes 7 ms
+19:48:21.919 [SimsCluster-akka.actor.default-dispatcher-30] INFO  simulation.akka.core.Driver - Round 187 takes 8 ms
+19:48:21.927 [SimsCluster-akka.actor.default-dispatcher-31] INFO  simulation.akka.core.Driver - Round 188 takes 8 ms
+19:48:21.936 [SimsCluster-akka.actor.default-dispatcher-52] INFO  simulation.akka.core.Driver - Round 189 takes 8 ms
+19:48:21.945 [SimsCluster-akka.actor.default-dispatcher-68] INFO  simulation.akka.core.Driver - Round 190 takes 9 ms
+19:48:21.953 [SimsCluster-akka.actor.default-dispatcher-48] INFO  simulation.akka.core.Driver - Round 191 takes 8 ms
+19:48:21.961 [SimsCluster-akka.actor.default-dispatcher-62] INFO  simulation.akka.core.Driver - Round 192 takes 8 ms
+19:48:21.970 [SimsCluster-akka.actor.default-dispatcher-45] INFO  simulation.akka.core.Driver - Round 193 takes 9 ms
+19:48:21.978 [SimsCluster-akka.actor.default-dispatcher-36] INFO  simulation.akka.core.Driver - Round 194 takes 8 ms
+19:48:21.986 [SimsCluster-akka.actor.default-dispatcher-24] INFO  simulation.akka.core.Driver - Round 195 takes 8 ms
+19:48:21.994 [SimsCluster-akka.actor.default-dispatcher-6] INFO  simulation.akka.core.Driver - Round 196 takes 7 ms
+19:48:22.005 [SimsCluster-akka.actor.default-dispatcher-39] INFO  simulation.akka.core.Driver - Round 197 takes 11 ms
+19:48:22.014 [SimsCluster-akka.actor.default-dispatcher-63] INFO  simulation.akka.core.Driver - Round 198 takes 8 ms
+19:48:22.022 [SimsCluster-akka.actor.default-dispatcher-46] INFO  simulation.akka.core.Driver - Round 199 takes 8 ms
+19:48:22.030 [SimsCluster-akka.actor.default-dispatcher-42] INFO  simulation.akka.core.Driver - Round 200 takes 8 ms
+19:48:22.036 [SimsCluster-akka.actor.default-dispatcher-42] INFO  simulation.akka.core.Driver - Average 11 ms
+19:48:22.067 [SimsCluster-akka.actor.default-dispatcher-54] INFO  a.r.RemoteActorRefProvider$RemotingTerminator - Shutting down remote daemon.
+19:48:22.068 [SimsCluster-akka.actor.default-dispatcher-54] INFO  a.r.RemoteActorRefProvider$RemotingTerminator - Remote daemon shut down; proceeding with flushing remote transports.
+19:48:22.070 [SimsCluster-akka.actor.default-dispatcher-54] INFO  akka.cluster.Cluster - Cluster Node [akka://SimsCluster@10.90.39.8:25251] - Marked address [akka://SimsCluster@10.90.39.8:25251] as [Leaving]
+19:48:22.088 [SimsCluster-akka.actor.default-dispatcher-47] INFO  a.r.RemoteActorRefProvider$RemotingTerminator - Remoting shut down.
+Simulation ends!
+1 total machines, 50 total workers, and 10000 actors
+19:48:22.295 [SimsCluster-akka.actor.default-dispatcher-3] INFO  akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+19:48:22.314 [SimsCluster-akka.actor.default-dispatcher-3] INFO  a.r.artery.tcp.ArteryTcpTransport - Remoting started with transport [Artery tcp]; listening on address [akka://SimsCluster@10.90.39.8:25251] with UID [-1447447169902219356]
+19:48:22.314 [SimsCluster-akka.actor.default-dispatcher-3] INFO  akka.cluster.Cluster - Cluster Node [akka://SimsCluster@10.90.39.8:25251] - Starting up, Akka version [2.6.14] ...
+19:48:22.318 [SimsCluster-akka.actor.default-dispatcher-3] INFO  akka.cluster.Cluster - Cluster Node [akka://SimsCluster@10.90.39.8:25251] - Registered cluster JMX MBean [akka:type=Cluster]
+19:48:22.318 [SimsCluster-akka.actor.default-dispatcher-3] INFO  akka.cluster.Cluster - Cluster Node [akka://SimsCluster@10.90.39.8:25251] - Started up successfully
+19:48:22.321 [SimsCluster-akka.actor.default-dispatcher-3] INFO  akka.cluster.sbr.SplitBrainResolver - SBR started. Config: strategy [KeepMajority], stable-after [20 seconds], down-all-when-unstable [15 seconds], selfUniqueAddress [akka://SimsCluster@10.90.39.8:25251#-1447447169902219356], selfDc [default].
+19:48:22.322 [SimsCluster-akka.actor.default-dispatcher-18] INFO  akka.cluster.Cluster - Cluster Node [akka://SimsCluster@10.90.39.8:25251] - Node [akka://SimsCluster@10.90.39.8:25251] is JOINING itself (with roles [Standalone, dc-default], version [0.0.0]) and forming new cluster
+19:48:22.322 [SimsCluster-akka.actor.default-dispatcher-18] INFO  akka.cluster.Cluster - Cluster Node [akka://SimsCluster@10.90.39.8:25251] - is the new leader among reachable nodes (more leaders may exist)
+19:48:22.323 [SimsCluster-akka.actor.default-dispatcher-18] INFO  akka.cluster.Cluster - Cluster Node [akka://SimsCluster@10.90.39.8:25251] - Leader is moving node [akka://SimsCluster@10.90.39.8:25251] to [Up]
+19:48:22.327 [SimsCluster-akka.actor.default-dispatcher-18] INFO  akka.cluster.sbr.SplitBrainResolver - This node is now the leader responsible for taking SBR decisions among the reachable nodes (more leaders may exist).
+19:48:23.408 [SimsCluster-akka.actor.default-dispatcher-35] INFO  simulation.akka.core.Driver - Round 1 takes 28 ms
+19:48:23.432 [SimsCluster-akka.actor.default-dispatcher-54] INFO  simulation.akka.core.Driver - Round 2 takes 23 ms
+19:48:23.453 [SimsCluster-akka.actor.default-dispatcher-57] INFO  simulation.akka.core.Driver - Round 3 takes 20 ms
+19:48:23.471 [SimsCluster-akka.actor.default-dispatcher-65] INFO  simulation.akka.core.Driver - Round 4 takes 18 ms
+19:48:23.485 [SimsCluster-akka.actor.default-dispatcher-37] INFO  simulation.akka.core.Driver - Round 5 takes 14 ms
+19:48:23.499 [SimsCluster-akka.actor.default-dispatcher-60] INFO  simulation.akka.core.Driver - Round 6 takes 14 ms
+19:48:23.513 [SimsCluster-akka.actor.default-dispatcher-43] INFO  simulation.akka.core.Driver - Round 7 takes 14 ms
+19:48:23.529 [SimsCluster-akka.actor.default-dispatcher-53] INFO  simulation.akka.core.Driver - Round 8 takes 16 ms
+19:48:23.543 [SimsCluster-akka.actor.default-dispatcher-40] INFO  simulation.akka.core.Driver - Round 9 takes 14 ms
+19:48:23.556 [SimsCluster-akka.actor.default-dispatcher-54] INFO  simulation.akka.core.Driver - Round 10 takes 13 ms
+19:48:23.569 [SimsCluster-akka.actor.default-dispatcher-46] INFO  simulation.akka.core.Driver - Round 11 takes 13 ms
+19:48:23.582 [SimsCluster-akka.actor.default-dispatcher-3] INFO  simulation.akka.core.Driver - Round 12 takes 13 ms
+19:48:23.595 [SimsCluster-akka.actor.default-dispatcher-48] INFO  simulation.akka.core.Driver - Round 13 takes 13 ms
+19:48:23.611 [SimsCluster-akka.actor.default-dispatcher-50] INFO  simulation.akka.core.Driver - Round 14 takes 16 ms
+19:48:23.626 [SimsCluster-akka.actor.default-dispatcher-23] INFO  simulation.akka.core.Driver - Round 15 takes 15 ms
+19:48:23.639 [SimsCluster-akka.actor.default-dispatcher-37] INFO  simulation.akka.core.Driver - Round 16 takes 13 ms
+19:48:23.653 [SimsCluster-akka.actor.default-dispatcher-66] INFO  simulation.akka.core.Driver - Round 17 takes 13 ms
+19:48:23.669 [SimsCluster-akka.actor.default-dispatcher-39] INFO  simulation.akka.core.Driver - Round 18 takes 15 ms
+19:48:23.684 [SimsCluster-akka.actor.default-dispatcher-30] INFO  simulation.akka.core.Driver - Round 19 takes 15 ms
+19:48:23.697 [SimsCluster-akka.actor.default-dispatcher-46] INFO  simulation.akka.core.Driver - Round 20 takes 12 ms
+19:48:23.712 [SimsCluster-akka.actor.default-dispatcher-60] INFO  simulation.akka.core.Driver - Round 21 takes 15 ms
+19:48:23.724 [SimsCluster-akka.actor.default-dispatcher-26] INFO  simulation.akka.core.Driver - Round 22 takes 12 ms
+19:48:23.739 [SimsCluster-akka.actor.default-dispatcher-45] INFO  simulation.akka.core.Driver - Round 23 takes 14 ms
+19:48:23.750 [SimsCluster-akka.actor.default-dispatcher-3] INFO  simulation.akka.core.Driver - Round 24 takes 11 ms
+19:48:23.764 [SimsCluster-akka.actor.default-dispatcher-3] INFO  simulation.akka.core.Driver - Round 25 takes 14 ms
+19:48:23.777 [SimsCluster-akka.actor.default-dispatcher-49] INFO  simulation.akka.core.Driver - Round 26 takes 13 ms
+19:48:23.790 [SimsCluster-akka.actor.default-dispatcher-64] INFO  simulation.akka.core.Driver - Round 27 takes 13 ms
+19:48:23.803 [SimsCluster-akka.actor.default-dispatcher-32] INFO  simulation.akka.core.Driver - Round 28 takes 13 ms
+19:48:23.816 [SimsCluster-akka.actor.default-dispatcher-64] INFO  simulation.akka.core.Driver - Round 29 takes 13 ms
+19:48:23.829 [SimsCluster-akka.actor.default-dispatcher-23] INFO  simulation.akka.core.Driver - Round 30 takes 12 ms
+19:48:23.842 [SimsCluster-akka.actor.default-dispatcher-36] INFO  simulation.akka.core.Driver - Round 31 takes 13 ms
+19:48:23.855 [SimsCluster-akka.actor.default-dispatcher-56] INFO  simulation.akka.core.Driver - Round 32 takes 12 ms
+19:48:23.868 [SimsCluster-akka.actor.default-dispatcher-46] INFO  simulation.akka.core.Driver - Round 33 takes 13 ms
+19:48:23.881 [SimsCluster-akka.actor.default-dispatcher-61] INFO  simulation.akka.core.Driver - Round 34 takes 13 ms
+19:48:23.894 [SimsCluster-akka.actor.default-dispatcher-64] INFO  simulation.akka.core.Driver - Round 35 takes 13 ms
+19:48:23.910 [SimsCluster-akka.actor.default-dispatcher-18] INFO  simulation.akka.core.Driver - Round 36 takes 16 ms
+19:48:23.923 [SimsCluster-akka.actor.default-dispatcher-56] INFO  simulation.akka.core.Driver - Round 37 takes 12 ms
+19:48:23.937 [SimsCluster-akka.actor.default-dispatcher-51] INFO  simulation.akka.core.Driver - Round 38 takes 13 ms
+19:48:23.950 [SimsCluster-akka.actor.default-dispatcher-39] INFO  simulation.akka.core.Driver - Round 39 takes 13 ms
+19:48:23.963 [SimsCluster-akka.actor.default-dispatcher-26] INFO  simulation.akka.core.Driver - Round 40 takes 12 ms
+19:48:23.976 [SimsCluster-akka.actor.default-dispatcher-54] INFO  simulation.akka.core.Driver - Round 41 takes 13 ms
+19:48:23.989 [SimsCluster-akka.actor.default-dispatcher-31] INFO  simulation.akka.core.Driver - Round 42 takes 13 ms
+19:48:24.002 [SimsCluster-akka.actor.default-dispatcher-63] INFO  simulation.akka.core.Driver - Round 43 takes 13 ms
+19:48:24.015 [SimsCluster-akka.actor.default-dispatcher-28] INFO  simulation.akka.core.Driver - Round 44 takes 13 ms
+19:48:24.027 [SimsCluster-akka.actor.default-dispatcher-34] INFO  simulation.akka.core.Driver - Round 45 takes 12 ms
+19:48:24.040 [SimsCluster-akka.actor.default-dispatcher-62] INFO  simulation.akka.core.Driver - Round 46 takes 13 ms
+19:48:24.053 [SimsCluster-akka.actor.default-dispatcher-31] INFO  simulation.akka.core.Driver - Round 47 takes 13 ms
+19:48:24.067 [SimsCluster-akka.actor.default-dispatcher-61] INFO  simulation.akka.core.Driver - Round 48 takes 14 ms
+19:48:24.080 [SimsCluster-akka.actor.default-dispatcher-67] INFO  simulation.akka.core.Driver - Round 49 takes 13 ms
+19:48:24.092 [SimsCluster-akka.actor.default-dispatcher-23] INFO  simulation.akka.core.Driver - Round 50 takes 12 ms
+19:48:24.103 [SimsCluster-akka.actor.default-dispatcher-36] INFO  simulation.akka.core.Driver - Round 51 takes 11 ms
+19:48:24.115 [SimsCluster-akka.actor.default-dispatcher-65] INFO  simulation.akka.core.Driver - Round 52 takes 12 ms
+19:48:24.127 [SimsCluster-akka.actor.default-dispatcher-25] INFO  simulation.akka.core.Driver - Round 53 takes 11 ms
+19:48:24.138 [SimsCluster-akka.actor.default-dispatcher-56] INFO  simulation.akka.core.Driver - Round 54 takes 11 ms
+19:48:24.152 [SimsCluster-akka.actor.default-dispatcher-37] INFO  simulation.akka.core.Driver - Round 55 takes 13 ms
+19:48:24.165 [SimsCluster-akka.actor.default-dispatcher-45] INFO  simulation.akka.core.Driver - Round 56 takes 13 ms
+19:48:24.177 [SimsCluster-akka.actor.default-dispatcher-51] INFO  simulation.akka.core.Driver - Round 57 takes 12 ms
+19:48:24.188 [SimsCluster-akka.actor.default-dispatcher-59] INFO  simulation.akka.core.Driver - Round 58 takes 11 ms
+19:48:24.199 [SimsCluster-akka.actor.default-dispatcher-45] INFO  simulation.akka.core.Driver - Round 59 takes 11 ms
+19:48:24.211 [SimsCluster-akka.actor.default-dispatcher-59] INFO  simulation.akka.core.Driver - Round 60 takes 11 ms
+19:48:24.223 [SimsCluster-akka.actor.default-dispatcher-39] INFO  simulation.akka.core.Driver - Round 61 takes 11 ms
+19:48:24.234 [SimsCluster-akka.actor.default-dispatcher-45] INFO  simulation.akka.core.Driver - Round 62 takes 11 ms
+19:48:24.245 [SimsCluster-akka.actor.default-dispatcher-45] INFO  simulation.akka.core.Driver - Round 63 takes 11 ms
+19:48:24.257 [SimsCluster-akka.actor.default-dispatcher-31] INFO  simulation.akka.core.Driver - Round 64 takes 12 ms
+19:48:24.268 [SimsCluster-akka.actor.default-dispatcher-40] INFO  simulation.akka.core.Driver - Round 65 takes 11 ms
+19:48:24.279 [SimsCluster-akka.actor.default-dispatcher-43] INFO  simulation.akka.core.Driver - Round 66 takes 11 ms
+19:48:24.382 [SimsCluster-akka.actor.default-dispatcher-53] INFO  simulation.akka.core.Driver - Round 67 takes 102 ms
+19:48:24.409 [SimsCluster-akka.actor.default-dispatcher-67] INFO  simulation.akka.core.Driver - Round 68 takes 27 ms
+19:48:24.420 [SimsCluster-akka.actor.default-dispatcher-40] INFO  simulation.akka.core.Driver - Round 69 takes 11 ms
+19:48:24.431 [SimsCluster-akka.actor.default-dispatcher-54] INFO  simulation.akka.core.Driver - Round 70 takes 10 ms
+19:48:24.442 [SimsCluster-akka.actor.default-dispatcher-51] INFO  simulation.akka.core.Driver - Round 71 takes 11 ms
+19:48:24.452 [SimsCluster-akka.actor.default-dispatcher-40] INFO  simulation.akka.core.Driver - Round 72 takes 10 ms
+19:48:24.463 [SimsCluster-akka.actor.default-dispatcher-53] INFO  simulation.akka.core.Driver - Round 73 takes 10 ms
+19:48:24.473 [SimsCluster-akka.actor.default-dispatcher-57] INFO  simulation.akka.core.Driver - Round 74 takes 10 ms
+19:48:24.484 [SimsCluster-akka.actor.default-dispatcher-43] INFO  simulation.akka.core.Driver - Round 75 takes 11 ms
+19:48:24.496 [SimsCluster-akka.actor.default-dispatcher-38] INFO  simulation.akka.core.Driver - Round 76 takes 12 ms
+19:48:24.507 [SimsCluster-akka.actor.default-dispatcher-26] INFO  simulation.akka.core.Driver - Round 77 takes 11 ms
+19:48:24.518 [SimsCluster-akka.actor.default-dispatcher-36] INFO  simulation.akka.core.Driver - Round 78 takes 11 ms
+19:48:24.529 [SimsCluster-akka.actor.default-dispatcher-51] INFO  simulation.akka.core.Driver - Round 79 takes 11 ms
+19:48:24.540 [SimsCluster-akka.actor.default-dispatcher-62] INFO  simulation.akka.core.Driver - Round 80 takes 11 ms
+19:48:24.551 [SimsCluster-akka.actor.default-dispatcher-62] INFO  simulation.akka.core.Driver - Round 81 takes 11 ms
+19:48:24.563 [SimsCluster-akka.actor.default-dispatcher-38] INFO  simulation.akka.core.Driver - Round 82 takes 11 ms
+19:48:24.573 [SimsCluster-akka.actor.default-dispatcher-37] INFO  simulation.akka.core.Driver - Round 83 takes 10 ms
+19:48:24.584 [SimsCluster-akka.actor.default-dispatcher-47] INFO  simulation.akka.core.Driver - Round 84 takes 11 ms
+19:48:24.595 [SimsCluster-akka.actor.default-dispatcher-51] INFO  simulation.akka.core.Driver - Round 85 takes 11 ms
+19:48:24.606 [SimsCluster-akka.actor.default-dispatcher-42] INFO  simulation.akka.core.Driver - Round 86 takes 11 ms
+19:48:24.617 [SimsCluster-akka.actor.default-dispatcher-23] INFO  simulation.akka.core.Driver - Round 87 takes 11 ms
+19:48:24.627 [SimsCluster-akka.actor.default-dispatcher-64] INFO  simulation.akka.core.Driver - Round 88 takes 9 ms
+19:48:24.637 [SimsCluster-akka.actor.default-dispatcher-35] INFO  simulation.akka.core.Driver - Round 89 takes 10 ms
+19:48:24.647 [SimsCluster-akka.actor.default-dispatcher-65] INFO  simulation.akka.core.Driver - Round 90 takes 9 ms
+19:48:24.657 [SimsCluster-akka.actor.default-dispatcher-28] INFO  simulation.akka.core.Driver - Round 91 takes 10 ms
+19:48:24.667 [SimsCluster-akka.actor.default-dispatcher-18] INFO  simulation.akka.core.Driver - Round 92 takes 9 ms
+19:48:24.677 [SimsCluster-akka.actor.default-dispatcher-40] INFO  simulation.akka.core.Driver - Round 93 takes 10 ms
+19:48:24.687 [SimsCluster-akka.actor.default-dispatcher-54] INFO  simulation.akka.core.Driver - Round 94 takes 9 ms
+19:48:24.697 [SimsCluster-akka.actor.default-dispatcher-66] INFO  simulation.akka.core.Driver - Round 95 takes 10 ms
+19:48:24.707 [SimsCluster-akka.actor.default-dispatcher-30] INFO  simulation.akka.core.Driver - Round 96 takes 10 ms
+19:48:24.718 [SimsCluster-akka.actor.default-dispatcher-26] INFO  simulation.akka.core.Driver - Round 97 takes 10 ms
+19:48:24.728 [SimsCluster-akka.actor.default-dispatcher-22] INFO  simulation.akka.core.Driver - Round 98 takes 10 ms
+19:48:24.738 [SimsCluster-akka.actor.default-dispatcher-28] INFO  simulation.akka.core.Driver - Round 99 takes 10 ms
+19:48:24.749 [SimsCluster-akka.actor.default-dispatcher-25] INFO  simulation.akka.core.Driver - Round 100 takes 11 ms
+19:48:24.761 [SimsCluster-akka.actor.default-dispatcher-32] INFO  simulation.akka.core.Driver - Round 101 takes 12 ms
+19:48:24.773 [SimsCluster-akka.actor.default-dispatcher-62] INFO  simulation.akka.core.Driver - Round 102 takes 12 ms
+19:48:24.782 [SimsCluster-akka.actor.default-dispatcher-67] INFO  simulation.akka.core.Driver - Round 103 takes 9 ms
+19:48:24.793 [SimsCluster-akka.actor.default-dispatcher-25] INFO  simulation.akka.core.Driver - Round 104 takes 10 ms
+19:48:24.803 [SimsCluster-akka.actor.default-dispatcher-40] INFO  simulation.akka.core.Driver - Round 105 takes 10 ms
+19:48:24.814 [SimsCluster-akka.actor.default-dispatcher-52] INFO  simulation.akka.core.Driver - Round 106 takes 11 ms
+19:48:24.823 [SimsCluster-akka.actor.default-dispatcher-27] INFO  simulation.akka.core.Driver - Round 107 takes 9 ms
+19:48:24.833 [SimsCluster-akka.actor.default-dispatcher-61] INFO  simulation.akka.core.Driver - Round 108 takes 9 ms
+19:48:24.843 [SimsCluster-akka.actor.default-dispatcher-31] INFO  simulation.akka.core.Driver - Round 109 takes 9 ms
+19:48:24.853 [SimsCluster-akka.actor.default-dispatcher-54] INFO  simulation.akka.core.Driver - Round 110 takes 10 ms
+19:48:24.863 [SimsCluster-akka.actor.default-dispatcher-23] INFO  simulation.akka.core.Driver - Round 111 takes 9 ms
+19:48:24.873 [SimsCluster-akka.actor.default-dispatcher-63] INFO  simulation.akka.core.Driver - Round 112 takes 9 ms
+19:48:24.883 [SimsCluster-akka.actor.default-dispatcher-49] INFO  simulation.akka.core.Driver - Round 113 takes 9 ms
+19:48:24.893 [SimsCluster-akka.actor.default-dispatcher-25] INFO  simulation.akka.core.Driver - Round 114 takes 10 ms
+19:48:24.902 [SimsCluster-akka.actor.default-dispatcher-37] INFO  simulation.akka.core.Driver - Round 115 takes 9 ms
+19:48:24.912 [SimsCluster-akka.actor.default-dispatcher-32] INFO  simulation.akka.core.Driver - Round 116 takes 9 ms
+19:48:24.921 [SimsCluster-akka.actor.default-dispatcher-49] INFO  simulation.akka.core.Driver - Round 117 takes 9 ms
+19:48:24.931 [SimsCluster-akka.actor.default-dispatcher-59] INFO  simulation.akka.core.Driver - Round 118 takes 10 ms
+19:48:24.940 [SimsCluster-akka.actor.default-dispatcher-64] INFO  simulation.akka.core.Driver - Round 119 takes 9 ms
+19:48:24.952 [SimsCluster-akka.actor.default-dispatcher-47] INFO  simulation.akka.core.Driver - Round 120 takes 12 ms
+19:48:24.963 [SimsCluster-akka.actor.default-dispatcher-30] INFO  simulation.akka.core.Driver - Round 121 takes 11 ms
+19:48:24.972 [SimsCluster-akka.actor.default-dispatcher-61] INFO  simulation.akka.core.Driver - Round 122 takes 9 ms
+19:48:24.982 [SimsCluster-akka.actor.default-dispatcher-33] INFO  simulation.akka.core.Driver - Round 123 takes 9 ms
+19:48:24.994 [SimsCluster-akka.actor.default-dispatcher-46] INFO  simulation.akka.core.Driver - Round 124 takes 12 ms
+19:48:25.003 [SimsCluster-akka.actor.default-dispatcher-49] INFO  simulation.akka.core.Driver - Round 125 takes 9 ms
+19:48:25.012 [SimsCluster-akka.actor.default-dispatcher-35] INFO  simulation.akka.core.Driver - Round 126 takes 9 ms
+19:48:25.022 [SimsCluster-akka.actor.default-dispatcher-51] INFO  simulation.akka.core.Driver - Round 127 takes 9 ms
+19:48:25.031 [SimsCluster-akka.actor.default-dispatcher-33] INFO  simulation.akka.core.Driver - Round 128 takes 9 ms
+19:48:25.042 [SimsCluster-akka.actor.default-dispatcher-61] INFO  simulation.akka.core.Driver - Round 129 takes 10 ms
+19:48:25.051 [SimsCluster-akka.actor.default-dispatcher-61] INFO  simulation.akka.core.Driver - Round 130 takes 9 ms
+19:48:25.061 [SimsCluster-akka.actor.default-dispatcher-23] INFO  simulation.akka.core.Driver - Round 131 takes 10 ms
+19:48:25.073 [SimsCluster-akka.actor.default-dispatcher-29] INFO  simulation.akka.core.Driver - Round 132 takes 12 ms
+19:48:25.084 [SimsCluster-akka.actor.default-dispatcher-18] INFO  simulation.akka.core.Driver - Round 133 takes 11 ms
+19:48:25.094 [SimsCluster-akka.actor.default-dispatcher-53] INFO  simulation.akka.core.Driver - Round 134 takes 10 ms
+19:48:25.103 [SimsCluster-akka.actor.default-dispatcher-57] INFO  simulation.akka.core.Driver - Round 135 takes 9 ms
+19:48:25.114 [SimsCluster-akka.actor.default-dispatcher-43] INFO  simulation.akka.core.Driver - Round 136 takes 10 ms
+19:48:25.124 [SimsCluster-akka.actor.default-dispatcher-30] INFO  simulation.akka.core.Driver - Round 137 takes 10 ms
+19:48:25.133 [SimsCluster-akka.actor.default-dispatcher-32] INFO  simulation.akka.core.Driver - Round 138 takes 9 ms
+19:48:25.143 [SimsCluster-akka.actor.default-dispatcher-26] INFO  simulation.akka.core.Driver - Round 139 takes 9 ms
+19:48:25.153 [SimsCluster-akka.actor.default-dispatcher-26] INFO  simulation.akka.core.Driver - Round 140 takes 10 ms
+19:48:25.163 [SimsCluster-akka.actor.default-dispatcher-62] INFO  simulation.akka.core.Driver - Round 141 takes 10 ms
+19:48:25.174 [SimsCluster-akka.actor.default-dispatcher-57] INFO  simulation.akka.core.Driver - Round 142 takes 11 ms
+19:48:25.184 [SimsCluster-akka.actor.default-dispatcher-58] INFO  simulation.akka.core.Driver - Round 143 takes 9 ms
+19:48:25.194 [SimsCluster-akka.actor.default-dispatcher-33] INFO  simulation.akka.core.Driver - Round 144 takes 10 ms
+19:48:25.204 [SimsCluster-akka.actor.default-dispatcher-31] INFO  simulation.akka.core.Driver - Round 145 takes 10 ms
+19:48:25.214 [SimsCluster-akka.actor.default-dispatcher-26] INFO  simulation.akka.core.Driver - Round 146 takes 10 ms
+19:48:25.224 [SimsCluster-akka.actor.default-dispatcher-33] INFO  simulation.akka.core.Driver - Round 147 takes 10 ms
+19:48:25.233 [SimsCluster-akka.actor.default-dispatcher-65] INFO  simulation.akka.core.Driver - Round 148 takes 9 ms
+19:48:25.243 [SimsCluster-akka.actor.default-dispatcher-33] INFO  simulation.akka.core.Driver - Round 149 takes 9 ms
+19:48:25.252 [SimsCluster-akka.actor.default-dispatcher-63] INFO  simulation.akka.core.Driver - Round 150 takes 9 ms
+19:48:25.263 [SimsCluster-akka.actor.default-dispatcher-65] INFO  simulation.akka.core.Driver - Round 151 takes 11 ms
+19:48:25.273 [SimsCluster-akka.actor.default-dispatcher-64] INFO  simulation.akka.core.Driver - Round 152 takes 10 ms
+19:48:25.282 [SimsCluster-akka.actor.default-dispatcher-26] INFO  simulation.akka.core.Driver - Round 153 takes 9 ms
+19:48:25.292 [SimsCluster-akka.actor.default-dispatcher-67] INFO  simulation.akka.core.Driver - Round 154 takes 10 ms
+19:48:25.302 [SimsCluster-akka.actor.default-dispatcher-48] INFO  simulation.akka.core.Driver - Round 155 takes 10 ms
+19:48:25.312 [SimsCluster-akka.actor.default-dispatcher-59] INFO  simulation.akka.core.Driver - Round 156 takes 10 ms
+19:48:25.321 [SimsCluster-akka.actor.default-dispatcher-67] INFO  simulation.akka.core.Driver - Round 157 takes 9 ms
+19:48:25.331 [SimsCluster-akka.actor.default-dispatcher-33] INFO  simulation.akka.core.Driver - Round 158 takes 10 ms
+19:48:25.340 [SimsCluster-akka.actor.default-dispatcher-40] INFO  simulation.akka.core.Driver - Round 159 takes 9 ms
+19:48:25.350 [SimsCluster-akka.actor.default-dispatcher-58] INFO  simulation.akka.core.Driver - Round 160 takes 10 ms
+19:48:25.359 [SimsCluster-akka.actor.default-dispatcher-24] INFO  simulation.akka.core.Driver - Round 161 takes 9 ms
+19:48:25.371 [SimsCluster-akka.actor.default-dispatcher-37] INFO  simulation.akka.core.Driver - Round 162 takes 11 ms
+19:48:25.382 [SimsCluster-akka.actor.default-dispatcher-36] INFO  simulation.akka.core.Driver - Round 163 takes 10 ms
+19:48:25.392 [SimsCluster-akka.actor.default-dispatcher-33] INFO  simulation.akka.core.Driver - Round 164 takes 10 ms
+19:48:25.403 [SimsCluster-akka.actor.default-dispatcher-37] INFO  simulation.akka.core.Driver - Round 165 takes 11 ms
+19:48:25.414 [SimsCluster-akka.actor.default-dispatcher-64] INFO  simulation.akka.core.Driver - Round 166 takes 11 ms
+19:48:25.424 [SimsCluster-akka.actor.default-dispatcher-37] INFO  simulation.akka.core.Driver - Round 167 takes 10 ms
+19:48:25.436 [SimsCluster-akka.actor.default-dispatcher-63] INFO  simulation.akka.core.Driver - Round 168 takes 12 ms
+19:48:25.446 [SimsCluster-akka.actor.default-dispatcher-40] INFO  simulation.akka.core.Driver - Round 169 takes 10 ms
+19:48:25.456 [SimsCluster-akka.actor.default-dispatcher-65] INFO  simulation.akka.core.Driver - Round 170 takes 10 ms
+19:48:25.466 [SimsCluster-akka.actor.default-dispatcher-53] INFO  simulation.akka.core.Driver - Round 171 takes 9 ms
+19:48:25.475 [SimsCluster-akka.actor.default-dispatcher-26] INFO  simulation.akka.core.Driver - Round 172 takes 9 ms
+19:48:25.485 [SimsCluster-akka.actor.default-dispatcher-33] INFO  simulation.akka.core.Driver - Round 173 takes 9 ms
+19:48:25.496 [SimsCluster-akka.actor.default-dispatcher-34] INFO  simulation.akka.core.Driver - Round 174 takes 11 ms
+19:48:25.508 [SimsCluster-akka.actor.default-dispatcher-33] INFO  simulation.akka.core.Driver - Round 175 takes 11 ms
+19:48:25.520 [SimsCluster-akka.actor.default-dispatcher-52] INFO  simulation.akka.core.Driver - Round 176 takes 12 ms
+19:48:25.529 [SimsCluster-akka.actor.default-dispatcher-67] INFO  simulation.akka.core.Driver - Round 177 takes 9 ms
+19:48:25.539 [SimsCluster-akka.actor.default-dispatcher-58] INFO  simulation.akka.core.Driver - Round 178 takes 10 ms
+19:48:25.548 [SimsCluster-akka.actor.default-dispatcher-45] INFO  simulation.akka.core.Driver - Round 179 takes 9 ms
+19:48:25.558 [SimsCluster-akka.actor.default-dispatcher-45] INFO  simulation.akka.core.Driver - Round 180 takes 10 ms
+19:48:25.568 [SimsCluster-akka.actor.default-dispatcher-30] INFO  simulation.akka.core.Driver - Round 181 takes 10 ms
+19:48:25.577 [SimsCluster-akka.actor.default-dispatcher-40] INFO  simulation.akka.core.Driver - Round 182 takes 9 ms
+19:48:25.586 [SimsCluster-akka.actor.default-dispatcher-44] INFO  simulation.akka.core.Driver - Round 183 takes 9 ms
+19:48:25.597 [SimsCluster-akka.actor.default-dispatcher-64] INFO  simulation.akka.core.Driver - Round 184 takes 11 ms
+19:48:25.606 [SimsCluster-akka.actor.default-dispatcher-41] INFO  simulation.akka.core.Driver - Round 185 takes 9 ms
+19:48:25.618 [SimsCluster-akka.actor.default-dispatcher-3] INFO  simulation.akka.core.Driver - Round 186 takes 11 ms
+19:48:25.627 [SimsCluster-akka.actor.default-dispatcher-41] INFO  simulation.akka.core.Driver - Round 187 takes 9 ms
+19:48:25.637 [SimsCluster-akka.actor.default-dispatcher-50] INFO  simulation.akka.core.Driver - Round 188 takes 9 ms
+19:48:25.647 [SimsCluster-akka.actor.default-dispatcher-33] INFO  simulation.akka.core.Driver - Round 189 takes 10 ms
+19:48:25.658 [SimsCluster-akka.actor.default-dispatcher-56] INFO  simulation.akka.core.Driver - Round 190 takes 11 ms
+19:48:25.668 [SimsCluster-akka.actor.default-dispatcher-41] INFO  simulation.akka.core.Driver - Round 191 takes 10 ms
+19:48:25.678 [SimsCluster-akka.actor.default-dispatcher-63] INFO  simulation.akka.core.Driver - Round 192 takes 9 ms
+19:48:25.687 [SimsCluster-akka.actor.default-dispatcher-63] INFO  simulation.akka.core.Driver - Round 193 takes 9 ms
+19:48:25.697 [SimsCluster-akka.actor.default-dispatcher-25] INFO  simulation.akka.core.Driver - Round 194 takes 10 ms
+19:48:25.707 [SimsCluster-akka.actor.default-dispatcher-40] INFO  simulation.akka.core.Driver - Round 195 takes 10 ms
+19:48:25.718 [SimsCluster-akka.actor.default-dispatcher-66] INFO  simulation.akka.core.Driver - Round 196 takes 11 ms
+19:48:25.728 [SimsCluster-akka.actor.default-dispatcher-53] INFO  simulation.akka.core.Driver - Round 197 takes 9 ms
+19:48:25.737 [SimsCluster-akka.actor.default-dispatcher-49] INFO  simulation.akka.core.Driver - Round 198 takes 9 ms
+19:48:25.747 [SimsCluster-akka.actor.default-dispatcher-22] INFO  simulation.akka.core.Driver - Round 199 takes 10 ms
+19:48:25.757 [SimsCluster-akka.actor.default-dispatcher-24] INFO  simulation.akka.core.Driver - Round 200 takes 10 ms
+19:48:25.757 [SimsCluster-akka.actor.default-dispatcher-24] INFO  simulation.akka.core.Driver - Average 11 ms
+19:48:25.771 [SimsCluster-akka.actor.default-dispatcher-23] INFO  a.r.RemoteActorRefProvider$RemotingTerminator - Shutting down remote daemon.
+19:48:25.772 [SimsCluster-akka.actor.default-dispatcher-23] INFO  a.r.RemoteActorRefProvider$RemotingTerminator - Remote daemon shut down; proceeding with flushing remote transports.
+19:48:25.772 [SimsCluster-akka.actor.default-dispatcher-23] INFO  akka.cluster.Cluster - Cluster Node [akka://SimsCluster@10.90.39.8:25251] - Marked address [akka://SimsCluster@10.90.39.8:25251] as [Leaving]
+19:48:25.773 [SimsCluster-akka.actor.default-dispatcher-28] INFO  a.r.RemoteActorRefProvider$RemotingTerminator - Remoting shut down.
+Simulation ends!
+1 total machines, 50 total workers, and 10000 actors
+19:48:25.893 [SimsCluster-akka.actor.default-dispatcher-3] INFO  akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+19:48:25.913 [SimsCluster-akka.actor.default-dispatcher-3] INFO  a.r.artery.tcp.ArteryTcpTransport - Remoting started with transport [Artery tcp]; listening on address [akka://SimsCluster@10.90.39.8:25251] with UID [-7024182375625317809]
+19:48:25.914 [SimsCluster-akka.actor.default-dispatcher-3] INFO  akka.cluster.Cluster - Cluster Node [akka://SimsCluster@10.90.39.8:25251] - Starting up, Akka version [2.6.14] ...
+19:48:25.918 [SimsCluster-akka.actor.default-dispatcher-3] INFO  akka.cluster.Cluster - Cluster Node [akka://SimsCluster@10.90.39.8:25251] - Registered cluster JMX MBean [akka:type=Cluster]
+19:48:25.918 [SimsCluster-akka.actor.default-dispatcher-3] INFO  akka.cluster.Cluster - Cluster Node [akka://SimsCluster@10.90.39.8:25251] - Started up successfully
+19:48:25.921 [SimsCluster-akka.actor.default-dispatcher-3] INFO  akka.cluster.sbr.SplitBrainResolver - SBR started. Config: strategy [KeepMajority], stable-after [20 seconds], down-all-when-unstable [15 seconds], selfUniqueAddress [akka://SimsCluster@10.90.39.8:25251#-7024182375625317809], selfDc [default].
+19:48:25.921 [SimsCluster-akka.actor.default-dispatcher-3] INFO  akka.cluster.Cluster - Cluster Node [akka://SimsCluster@10.90.39.8:25251] - Node [akka://SimsCluster@10.90.39.8:25251] is JOINING itself (with roles [Standalone, dc-default], version [0.0.0]) and forming new cluster
+19:48:25.922 [SimsCluster-akka.actor.default-dispatcher-3] INFO  akka.cluster.Cluster - Cluster Node [akka://SimsCluster@10.90.39.8:25251] - is the new leader among reachable nodes (more leaders may exist)
+19:48:25.922 [SimsCluster-akka.actor.default-dispatcher-3] INFO  akka.cluster.Cluster - Cluster Node [akka://SimsCluster@10.90.39.8:25251] - Leader is moving node [akka://SimsCluster@10.90.39.8:25251] to [Up]
+19:48:25.926 [SimsCluster-akka.actor.default-dispatcher-3] INFO  akka.cluster.sbr.SplitBrainResolver - This node is now the leader responsible for taking SBR decisions among the reachable nodes (more leaders may exist).
+19:48:27.008 [SimsCluster-akka.actor.default-dispatcher-33] INFO  simulation.akka.core.Driver - Round 1 takes 28 ms
+19:48:27.033 [SimsCluster-akka.actor.default-dispatcher-34] INFO  simulation.akka.core.Driver - Round 2 takes 25 ms
+19:48:27.054 [SimsCluster-akka.actor.default-dispatcher-59] INFO  simulation.akka.core.Driver - Round 3 takes 21 ms
+19:48:27.074 [SimsCluster-akka.actor.default-dispatcher-22] INFO  simulation.akka.core.Driver - Round 4 takes 20 ms
+19:48:27.094 [SimsCluster-akka.actor.default-dispatcher-35] INFO  simulation.akka.core.Driver - Round 5 takes 20 ms
+19:48:27.115 [SimsCluster-akka.actor.default-dispatcher-24] INFO  simulation.akka.core.Driver - Round 6 takes 21 ms
+19:48:27.135 [SimsCluster-akka.actor.default-dispatcher-43] INFO  simulation.akka.core.Driver - Round 7 takes 20 ms
+19:48:27.154 [SimsCluster-akka.actor.default-dispatcher-43] INFO  simulation.akka.core.Driver - Round 8 takes 19 ms
+19:48:27.173 [SimsCluster-akka.actor.default-dispatcher-37] INFO  simulation.akka.core.Driver - Round 9 takes 19 ms
+19:48:27.191 [SimsCluster-akka.actor.default-dispatcher-56] INFO  simulation.akka.core.Driver - Round 10 takes 18 ms
+19:48:27.209 [SimsCluster-akka.actor.default-dispatcher-64] INFO  simulation.akka.core.Driver - Round 11 takes 18 ms
+19:48:27.226 [SimsCluster-akka.actor.default-dispatcher-46] INFO  simulation.akka.core.Driver - Round 12 takes 17 ms
+19:48:27.242 [SimsCluster-akka.actor.default-dispatcher-58] INFO  simulation.akka.core.Driver - Round 13 takes 16 ms
+19:48:27.259 [SimsCluster-akka.actor.default-dispatcher-37] INFO  simulation.akka.core.Driver - Round 14 takes 16 ms
+19:48:27.278 [SimsCluster-akka.actor.default-dispatcher-63] INFO  simulation.akka.core.Driver - Round 15 takes 19 ms
+19:48:27.296 [SimsCluster-akka.actor.default-dispatcher-59] INFO  simulation.akka.core.Driver - Round 16 takes 17 ms
+19:48:27.315 [SimsCluster-akka.actor.default-dispatcher-36] INFO  simulation.akka.core.Driver - Round 17 takes 19 ms
+19:48:27.333 [SimsCluster-akka.actor.default-dispatcher-61] INFO  simulation.akka.core.Driver - Round 18 takes 18 ms
+19:48:27.351 [SimsCluster-akka.actor.default-dispatcher-43] INFO  simulation.akka.core.Driver - Round 19 takes 17 ms
+19:48:27.370 [SimsCluster-akka.actor.default-dispatcher-65] INFO  simulation.akka.core.Driver - Round 20 takes 19 ms
+19:48:27.387 [SimsCluster-akka.actor.default-dispatcher-36] INFO  simulation.akka.core.Driver - Round 21 takes 17 ms
+19:48:27.404 [SimsCluster-akka.actor.default-dispatcher-50] INFO  simulation.akka.core.Driver - Round 22 takes 17 ms
+19:48:27.423 [SimsCluster-akka.actor.default-dispatcher-42] INFO  simulation.akka.core.Driver - Round 23 takes 19 ms
+19:48:27.442 [SimsCluster-akka.actor.default-dispatcher-56] INFO  simulation.akka.core.Driver - Round 24 takes 18 ms
+19:48:27.459 [SimsCluster-akka.actor.default-dispatcher-3] INFO  simulation.akka.core.Driver - Round 25 takes 17 ms
+19:48:27.476 [SimsCluster-akka.actor.default-dispatcher-53] INFO  simulation.akka.core.Driver - Round 26 takes 17 ms
+19:48:27.494 [SimsCluster-akka.actor.default-dispatcher-42] INFO  simulation.akka.core.Driver - Round 27 takes 17 ms
+19:48:27.511 [SimsCluster-akka.actor.default-dispatcher-62] INFO  simulation.akka.core.Driver - Round 28 takes 17 ms
+19:48:27.529 [SimsCluster-akka.actor.default-dispatcher-61] INFO  simulation.akka.core.Driver - Round 29 takes 17 ms
+19:48:27.545 [SimsCluster-akka.actor.default-dispatcher-26] INFO  simulation.akka.core.Driver - Round 30 takes 16 ms
+19:48:27.561 [SimsCluster-akka.actor.default-dispatcher-56] INFO  simulation.akka.core.Driver - Round 31 takes 16 ms
+19:48:27.578 [SimsCluster-akka.actor.default-dispatcher-65] INFO  simulation.akka.core.Driver - Round 32 takes 17 ms
+19:48:27.597 [SimsCluster-akka.actor.default-dispatcher-28] INFO  simulation.akka.core.Driver - Round 33 takes 18 ms
+19:48:27.614 [SimsCluster-akka.actor.default-dispatcher-41] INFO  simulation.akka.core.Driver - Round 34 takes 17 ms
+19:48:27.630 [SimsCluster-akka.actor.default-dispatcher-31] INFO  simulation.akka.core.Driver - Round 35 takes 16 ms
+19:48:27.646 [SimsCluster-akka.actor.default-dispatcher-63] INFO  simulation.akka.core.Driver - Round 36 takes 16 ms
+19:48:27.663 [SimsCluster-akka.actor.default-dispatcher-20] INFO  simulation.akka.core.Driver - Round 37 takes 16 ms
+19:48:27.682 [SimsCluster-akka.actor.default-dispatcher-30] INFO  simulation.akka.core.Driver - Round 38 takes 19 ms
+19:48:27.698 [SimsCluster-akka.actor.default-dispatcher-46] INFO  simulation.akka.core.Driver - Round 39 takes 16 ms
+19:48:27.713 [SimsCluster-akka.actor.default-dispatcher-33] INFO  simulation.akka.core.Driver - Round 40 takes 15 ms
+19:48:27.728 [SimsCluster-akka.actor.default-dispatcher-44] INFO  simulation.akka.core.Driver - Round 41 takes 15 ms
+19:48:27.743 [SimsCluster-akka.actor.default-dispatcher-25] INFO  simulation.akka.core.Driver - Round 42 takes 15 ms
+19:48:27.762 [SimsCluster-akka.actor.default-dispatcher-30] INFO  simulation.akka.core.Driver - Round 43 takes 18 ms
+19:48:27.779 [SimsCluster-akka.actor.default-dispatcher-26] INFO  simulation.akka.core.Driver - Round 44 takes 16 ms
+19:48:27.795 [SimsCluster-akka.actor.default-dispatcher-64] INFO  simulation.akka.core.Driver - Round 45 takes 15 ms
+19:48:27.812 [SimsCluster-akka.actor.default-dispatcher-26] INFO  simulation.akka.core.Driver - Round 46 takes 17 ms
+19:48:27.830 [SimsCluster-akka.actor.default-dispatcher-48] INFO  simulation.akka.core.Driver - Round 47 takes 18 ms
+19:48:27.845 [SimsCluster-akka.actor.default-dispatcher-44] INFO  simulation.akka.core.Driver - Round 48 takes 15 ms
+19:48:27.862 [SimsCluster-akka.actor.default-dispatcher-30] INFO  simulation.akka.core.Driver - Round 49 takes 17 ms
+19:48:27.876 [SimsCluster-akka.actor.default-dispatcher-38] INFO  simulation.akka.core.Driver - Round 50 takes 14 ms
+19:48:27.894 [SimsCluster-akka.actor.default-dispatcher-41] INFO  simulation.akka.core.Driver - Round 51 takes 18 ms
+19:48:27.909 [SimsCluster-akka.actor.default-dispatcher-41] INFO  simulation.akka.core.Driver - Round 52 takes 15 ms
+19:48:27.924 [SimsCluster-akka.actor.default-dispatcher-38] INFO  simulation.akka.core.Driver - Round 53 takes 15 ms
+19:48:27.943 [SimsCluster-akka.actor.default-dispatcher-25] INFO  simulation.akka.core.Driver - Round 54 takes 19 ms
+19:48:27.958 [SimsCluster-akka.actor.default-dispatcher-41] INFO  simulation.akka.core.Driver - Round 55 takes 15 ms
+19:48:27.973 [SimsCluster-akka.actor.default-dispatcher-23] INFO  simulation.akka.core.Driver - Round 56 takes 15 ms
+19:48:27.989 [SimsCluster-akka.actor.default-dispatcher-41] INFO  simulation.akka.core.Driver - Round 57 takes 15 ms
+19:48:28.004 [SimsCluster-akka.actor.default-dispatcher-54] INFO  simulation.akka.core.Driver - Round 58 takes 15 ms
+19:48:28.022 [SimsCluster-akka.actor.default-dispatcher-58] INFO  simulation.akka.core.Driver - Round 59 takes 18 ms
+19:48:28.037 [SimsCluster-akka.actor.default-dispatcher-23] INFO  simulation.akka.core.Driver - Round 60 takes 15 ms
+19:48:28.053 [SimsCluster-akka.actor.default-dispatcher-33] INFO  simulation.akka.core.Driver - Round 61 takes 16 ms
+19:48:28.068 [SimsCluster-akka.actor.default-dispatcher-63] INFO  simulation.akka.core.Driver - Round 62 takes 15 ms
+19:48:28.083 [SimsCluster-akka.actor.default-dispatcher-52] INFO  simulation.akka.core.Driver - Round 63 takes 15 ms
+19:48:28.098 [SimsCluster-akka.actor.default-dispatcher-32] INFO  simulation.akka.core.Driver - Round 64 takes 15 ms
+19:48:28.113 [SimsCluster-akka.actor.default-dispatcher-28] INFO  simulation.akka.core.Driver - Round 65 takes 15 ms
+19:48:28.128 [SimsCluster-akka.actor.default-dispatcher-37] INFO  simulation.akka.core.Driver - Round 66 takes 15 ms
+19:48:28.143 [SimsCluster-akka.actor.default-dispatcher-59] INFO  simulation.akka.core.Driver - Round 67 takes 15 ms
+19:48:28.158 [SimsCluster-akka.actor.default-dispatcher-47] INFO  simulation.akka.core.Driver - Round 68 takes 15 ms
+19:48:28.173 [SimsCluster-akka.actor.default-dispatcher-24] INFO  simulation.akka.core.Driver - Round 69 takes 15 ms
+19:48:28.188 [SimsCluster-akka.actor.default-dispatcher-30] INFO  simulation.akka.core.Driver - Round 70 takes 15 ms
+19:48:28.204 [SimsCluster-akka.actor.default-dispatcher-57] INFO  simulation.akka.core.Driver - Round 71 takes 16 ms
+19:48:28.219 [SimsCluster-akka.actor.default-dispatcher-32] INFO  simulation.akka.core.Driver - Round 72 takes 15 ms
+19:48:28.234 [SimsCluster-akka.actor.default-dispatcher-49] INFO  simulation.akka.core.Driver - Round 73 takes 15 ms
+19:48:28.249 [SimsCluster-akka.actor.default-dispatcher-41] INFO  simulation.akka.core.Driver - Round 74 takes 15 ms
+19:48:28.264 [SimsCluster-akka.actor.default-dispatcher-29] INFO  simulation.akka.core.Driver - Round 75 takes 15 ms
+19:48:28.280 [SimsCluster-akka.actor.default-dispatcher-20] INFO  simulation.akka.core.Driver - Round 76 takes 16 ms
+19:48:28.295 [SimsCluster-akka.actor.default-dispatcher-21] INFO  simulation.akka.core.Driver - Round 77 takes 15 ms
+19:48:28.310 [SimsCluster-akka.actor.default-dispatcher-24] INFO  simulation.akka.core.Driver - Round 78 takes 15 ms
+19:48:28.326 [SimsCluster-akka.actor.default-dispatcher-44] INFO  simulation.akka.core.Driver - Round 79 takes 16 ms
+19:48:28.341 [SimsCluster-akka.actor.default-dispatcher-28] INFO  simulation.akka.core.Driver - Round 80 takes 14 ms
+19:48:28.356 [SimsCluster-akka.actor.default-dispatcher-36] INFO  simulation.akka.core.Driver - Round 81 takes 15 ms
+19:48:28.371 [SimsCluster-akka.actor.default-dispatcher-21] INFO  simulation.akka.core.Driver - Round 82 takes 14 ms
+19:48:28.386 [SimsCluster-akka.actor.default-dispatcher-20] INFO  simulation.akka.core.Driver - Round 83 takes 14 ms
+19:48:28.401 [SimsCluster-akka.actor.default-dispatcher-30] INFO  simulation.akka.core.Driver - Round 84 takes 14 ms
+19:48:28.416 [SimsCluster-akka.actor.default-dispatcher-3] INFO  simulation.akka.core.Driver - Round 85 takes 14 ms
+19:48:28.432 [SimsCluster-akka.actor.default-dispatcher-25] INFO  simulation.akka.core.Driver - Round 86 takes 15 ms
+19:48:28.446 [SimsCluster-akka.actor.default-dispatcher-34] INFO  simulation.akka.core.Driver - Round 87 takes 14 ms
+19:48:28.462 [SimsCluster-akka.actor.default-dispatcher-20] INFO  simulation.akka.core.Driver - Round 88 takes 15 ms
+19:48:28.477 [SimsCluster-akka.actor.default-dispatcher-37] INFO  simulation.akka.core.Driver - Round 89 takes 15 ms
+19:48:28.493 [SimsCluster-akka.actor.default-dispatcher-65] INFO  simulation.akka.core.Driver - Round 90 takes 16 ms
+19:48:28.509 [SimsCluster-akka.actor.default-dispatcher-27] INFO  simulation.akka.core.Driver - Round 91 takes 16 ms
+19:48:28.524 [SimsCluster-akka.actor.default-dispatcher-41] INFO  simulation.akka.core.Driver - Round 92 takes 15 ms
+19:48:28.540 [SimsCluster-akka.actor.default-dispatcher-23] INFO  simulation.akka.core.Driver - Round 93 takes 16 ms
+19:48:28.556 [SimsCluster-akka.actor.default-dispatcher-38] INFO  simulation.akka.core.Driver - Round 94 takes 16 ms
+19:48:28.573 [SimsCluster-akka.actor.default-dispatcher-47] INFO  simulation.akka.core.Driver - Round 95 takes 17 ms
+19:48:28.592 [SimsCluster-akka.actor.default-dispatcher-33] INFO  simulation.akka.core.Driver - Round 96 takes 19 ms
+19:48:28.611 [SimsCluster-akka.actor.default-dispatcher-33] INFO  simulation.akka.core.Driver - Round 97 takes 19 ms
+19:48:28.629 [SimsCluster-akka.actor.default-dispatcher-49] INFO  simulation.akka.core.Driver - Round 98 takes 18 ms
+19:48:28.645 [SimsCluster-akka.actor.default-dispatcher-31] INFO  simulation.akka.core.Driver - Round 99 takes 16 ms
+19:48:28.662 [SimsCluster-akka.actor.default-dispatcher-20] INFO  simulation.akka.core.Driver - Round 100 takes 17 ms
+19:48:28.678 [SimsCluster-akka.actor.default-dispatcher-39] INFO  simulation.akka.core.Driver - Round 101 takes 16 ms
+19:48:28.694 [SimsCluster-akka.actor.default-dispatcher-35] INFO  simulation.akka.core.Driver - Round 102 takes 15 ms
+19:48:28.711 [SimsCluster-akka.actor.default-dispatcher-54] INFO  simulation.akka.core.Driver - Round 103 takes 16 ms
+19:48:28.727 [SimsCluster-akka.actor.default-dispatcher-49] INFO  simulation.akka.core.Driver - Round 104 takes 16 ms
+19:48:28.742 [SimsCluster-akka.actor.default-dispatcher-55] INFO  simulation.akka.core.Driver - Round 105 takes 15 ms
+19:48:28.760 [SimsCluster-akka.actor.default-dispatcher-42] INFO  simulation.akka.core.Driver - Round 106 takes 17 ms
+19:48:28.776 [SimsCluster-akka.actor.default-dispatcher-30] INFO  simulation.akka.core.Driver - Round 107 takes 16 ms
+19:48:28.792 [SimsCluster-akka.actor.default-dispatcher-52] INFO  simulation.akka.core.Driver - Round 108 takes 16 ms
+19:48:28.809 [SimsCluster-akka.actor.default-dispatcher-44] INFO  simulation.akka.core.Driver - Round 109 takes 17 ms
+19:48:28.826 [SimsCluster-akka.actor.default-dispatcher-56] INFO  simulation.akka.core.Driver - Round 110 takes 17 ms
+19:48:28.843 [SimsCluster-akka.actor.default-dispatcher-39] INFO  simulation.akka.core.Driver - Round 111 takes 17 ms
+19:48:28.858 [SimsCluster-akka.actor.default-dispatcher-61] INFO  simulation.akka.core.Driver - Round 112 takes 15 ms
+19:48:28.875 [SimsCluster-akka.actor.default-dispatcher-57] INFO  simulation.akka.core.Driver - Round 113 takes 17 ms
+19:48:28.892 [SimsCluster-akka.actor.default-dispatcher-33] INFO  simulation.akka.core.Driver - Round 114 takes 17 ms
+19:48:28.908 [SimsCluster-akka.actor.default-dispatcher-22] INFO  simulation.akka.core.Driver - Round 115 takes 16 ms
+19:48:28.925 [SimsCluster-akka.actor.default-dispatcher-33] INFO  simulation.akka.core.Driver - Round 116 takes 17 ms
+19:48:28.944 [SimsCluster-akka.actor.default-dispatcher-3] INFO  simulation.akka.core.Driver - Round 117 takes 18 ms
+19:48:28.961 [SimsCluster-akka.actor.default-dispatcher-48] INFO  simulation.akka.core.Driver - Round 118 takes 17 ms
+19:48:28.977 [SimsCluster-akka.actor.default-dispatcher-45] INFO  simulation.akka.core.Driver - Round 119 takes 16 ms
+19:48:28.993 [SimsCluster-akka.actor.default-dispatcher-37] INFO  simulation.akka.core.Driver - Round 120 takes 16 ms
+19:48:29.010 [SimsCluster-akka.actor.default-dispatcher-24] INFO  simulation.akka.core.Driver - Round 121 takes 16 ms
+19:48:29.026 [SimsCluster-akka.actor.default-dispatcher-22] INFO  simulation.akka.core.Driver - Round 122 takes 16 ms
+19:48:29.043 [SimsCluster-akka.actor.default-dispatcher-48] INFO  simulation.akka.core.Driver - Round 123 takes 17 ms
+19:48:29.059 [SimsCluster-akka.actor.default-dispatcher-45] INFO  simulation.akka.core.Driver - Round 124 takes 16 ms
+19:48:29.076 [SimsCluster-akka.actor.default-dispatcher-44] INFO  simulation.akka.core.Driver - Round 125 takes 17 ms
+19:48:29.093 [SimsCluster-akka.actor.default-dispatcher-37] INFO  simulation.akka.core.Driver - Round 126 takes 17 ms
+19:48:29.113 [SimsCluster-akka.actor.default-dispatcher-54] INFO  simulation.akka.core.Driver - Round 127 takes 20 ms
+19:48:29.129 [SimsCluster-akka.actor.default-dispatcher-58] INFO  simulation.akka.core.Driver - Round 128 takes 16 ms
+19:48:29.145 [SimsCluster-akka.actor.default-dispatcher-18] INFO  simulation.akka.core.Driver - Round 129 takes 16 ms
+19:48:29.162 [SimsCluster-akka.actor.default-dispatcher-24] INFO  simulation.akka.core.Driver - Round 130 takes 17 ms
+19:48:29.179 [SimsCluster-akka.actor.default-dispatcher-42] INFO  simulation.akka.core.Driver - Round 131 takes 17 ms
+19:48:29.195 [SimsCluster-akka.actor.default-dispatcher-23] INFO  simulation.akka.core.Driver - Round 132 takes 16 ms
+19:48:29.211 [SimsCluster-akka.actor.default-dispatcher-60] INFO  simulation.akka.core.Driver - Round 133 takes 16 ms
+19:48:29.228 [SimsCluster-akka.actor.default-dispatcher-24] INFO  simulation.akka.core.Driver - Round 134 takes 15 ms
+19:48:29.243 [SimsCluster-akka.actor.default-dispatcher-53] INFO  simulation.akka.core.Driver - Round 135 takes 15 ms
+19:48:29.260 [SimsCluster-akka.actor.default-dispatcher-30] INFO  simulation.akka.core.Driver - Round 136 takes 16 ms
+19:48:29.277 [SimsCluster-akka.actor.default-dispatcher-3] INFO  simulation.akka.core.Driver - Round 137 takes 17 ms
+19:48:29.293 [SimsCluster-akka.actor.default-dispatcher-21] INFO  simulation.akka.core.Driver - Round 138 takes 16 ms
+19:48:29.309 [SimsCluster-akka.actor.default-dispatcher-25] INFO  simulation.akka.core.Driver - Round 139 takes 16 ms
+19:48:29.326 [SimsCluster-akka.actor.default-dispatcher-32] INFO  simulation.akka.core.Driver - Round 140 takes 17 ms
+19:48:29.342 [SimsCluster-akka.actor.default-dispatcher-30] INFO  simulation.akka.core.Driver - Round 141 takes 16 ms
+19:48:29.358 [SimsCluster-akka.actor.default-dispatcher-45] INFO  simulation.akka.core.Driver - Round 142 takes 16 ms
+19:48:29.375 [SimsCluster-akka.actor.default-dispatcher-36] INFO  simulation.akka.core.Driver - Round 143 takes 17 ms
+19:48:29.392 [SimsCluster-akka.actor.default-dispatcher-30] INFO  simulation.akka.core.Driver - Round 144 takes 16 ms
+19:48:29.408 [SimsCluster-akka.actor.default-dispatcher-23] INFO  simulation.akka.core.Driver - Round 145 takes 16 ms
+19:48:29.425 [SimsCluster-akka.actor.default-dispatcher-52] INFO  simulation.akka.core.Driver - Round 146 takes 16 ms
+19:48:29.441 [SimsCluster-akka.actor.default-dispatcher-55] INFO  simulation.akka.core.Driver - Round 147 takes 16 ms
+19:48:29.457 [SimsCluster-akka.actor.default-dispatcher-58] INFO  simulation.akka.core.Driver - Round 148 takes 16 ms
+19:48:29.475 [SimsCluster-akka.actor.default-dispatcher-38] INFO  simulation.akka.core.Driver - Round 149 takes 17 ms
+19:48:29.491 [SimsCluster-akka.actor.default-dispatcher-34] INFO  simulation.akka.core.Driver - Round 150 takes 16 ms
+19:48:29.507 [SimsCluster-akka.actor.default-dispatcher-48] INFO  simulation.akka.core.Driver - Round 151 takes 16 ms
+19:48:29.524 [SimsCluster-akka.actor.default-dispatcher-54] INFO  simulation.akka.core.Driver - Round 152 takes 17 ms
+19:48:29.540 [SimsCluster-akka.actor.default-dispatcher-57] INFO  simulation.akka.core.Driver - Round 153 takes 16 ms
+19:48:29.556 [SimsCluster-akka.actor.default-dispatcher-18] INFO  simulation.akka.core.Driver - Round 154 takes 16 ms
+19:48:29.573 [SimsCluster-akka.actor.default-dispatcher-44] INFO  simulation.akka.core.Driver - Round 155 takes 16 ms
+19:48:29.589 [SimsCluster-akka.actor.default-dispatcher-37] INFO  simulation.akka.core.Driver - Round 156 takes 16 ms
+19:48:29.606 [SimsCluster-akka.actor.default-dispatcher-55] INFO  simulation.akka.core.Driver - Round 157 takes 17 ms
+19:48:29.622 [SimsCluster-akka.actor.default-dispatcher-65] INFO  simulation.akka.core.Driver - Round 158 takes 16 ms
+19:48:29.638 [SimsCluster-akka.actor.default-dispatcher-22] INFO  simulation.akka.core.Driver - Round 159 takes 16 ms
+19:48:29.655 [SimsCluster-akka.actor.default-dispatcher-31] INFO  simulation.akka.core.Driver - Round 160 takes 16 ms
+19:48:29.672 [SimsCluster-akka.actor.default-dispatcher-61] INFO  simulation.akka.core.Driver - Round 161 takes 17 ms
+19:48:29.688 [SimsCluster-akka.actor.default-dispatcher-32] INFO  simulation.akka.core.Driver - Round 162 takes 16 ms
+19:48:29.705 [SimsCluster-akka.actor.default-dispatcher-38] INFO  simulation.akka.core.Driver - Round 163 takes 16 ms
+19:48:29.721 [SimsCluster-akka.actor.default-dispatcher-55] INFO  simulation.akka.core.Driver - Round 164 takes 16 ms
+19:48:29.737 [SimsCluster-akka.actor.default-dispatcher-39] INFO  simulation.akka.core.Driver - Round 165 takes 16 ms
+19:48:29.754 [SimsCluster-akka.actor.default-dispatcher-62] INFO  simulation.akka.core.Driver - Round 166 takes 16 ms
+19:48:29.820 [SimsCluster-akka.actor.default-dispatcher-48] INFO  simulation.akka.core.Driver - Round 167 takes 66 ms
+19:48:29.835 [SimsCluster-akka.actor.default-dispatcher-56] INFO  simulation.akka.core.Driver - Round 168 takes 15 ms
+19:48:29.850 [SimsCluster-akka.actor.default-dispatcher-41] INFO  simulation.akka.core.Driver - Round 169 takes 15 ms
+19:48:29.865 [SimsCluster-akka.actor.default-dispatcher-37] INFO  simulation.akka.core.Driver - Round 170 takes 15 ms
+19:48:29.879 [SimsCluster-akka.actor.default-dispatcher-59] INFO  simulation.akka.core.Driver - Round 171 takes 14 ms
+19:48:29.894 [SimsCluster-akka.actor.default-dispatcher-45] INFO  simulation.akka.core.Driver - Round 172 takes 13 ms
+19:48:29.908 [SimsCluster-akka.actor.default-dispatcher-59] INFO  simulation.akka.core.Driver - Round 173 takes 14 ms
+19:48:29.923 [SimsCluster-akka.actor.default-dispatcher-45] INFO  simulation.akka.core.Driver - Round 174 takes 15 ms
+19:48:29.937 [SimsCluster-akka.actor.default-dispatcher-61] INFO  simulation.akka.core.Driver - Round 175 takes 14 ms
+19:48:29.952 [SimsCluster-akka.actor.default-dispatcher-59] INFO  simulation.akka.core.Driver - Round 176 takes 14 ms
+19:48:29.966 [SimsCluster-akka.actor.default-dispatcher-57] INFO  simulation.akka.core.Driver - Round 177 takes 14 ms
+19:48:29.981 [SimsCluster-akka.actor.default-dispatcher-38] INFO  simulation.akka.core.Driver - Round 178 takes 15 ms
+19:48:29.995 [SimsCluster-akka.actor.default-dispatcher-47] INFO  simulation.akka.core.Driver - Round 179 takes 14 ms
+19:48:30.011 [SimsCluster-akka.actor.default-dispatcher-30] INFO  simulation.akka.core.Driver - Round 180 takes 15 ms
+19:48:30.025 [SimsCluster-akka.actor.default-dispatcher-54] INFO  simulation.akka.core.Driver - Round 181 takes 14 ms
+19:48:30.039 [SimsCluster-akka.actor.default-dispatcher-41] INFO  simulation.akka.core.Driver - Round 182 takes 14 ms
+19:48:30.054 [SimsCluster-akka.actor.default-dispatcher-30] INFO  simulation.akka.core.Driver - Round 183 takes 14 ms
+19:48:30.068 [SimsCluster-akka.actor.default-dispatcher-26] INFO  simulation.akka.core.Driver - Round 184 takes 14 ms
+19:48:30.082 [SimsCluster-akka.actor.default-dispatcher-31] INFO  simulation.akka.core.Driver - Round 185 takes 14 ms
+19:48:30.095 [SimsCluster-akka.actor.default-dispatcher-29] INFO  simulation.akka.core.Driver - Round 186 takes 12 ms
+19:48:30.110 [SimsCluster-akka.actor.default-dispatcher-22] INFO  simulation.akka.core.Driver - Round 187 takes 14 ms
+19:48:30.125 [SimsCluster-akka.actor.default-dispatcher-51] INFO  simulation.akka.core.Driver - Round 188 takes 15 ms
+19:48:30.139 [SimsCluster-akka.actor.default-dispatcher-42] INFO  simulation.akka.core.Driver - Round 189 takes 14 ms
+19:48:30.154 [SimsCluster-akka.actor.default-dispatcher-35] INFO  simulation.akka.core.Driver - Round 190 takes 15 ms
+19:48:30.168 [SimsCluster-akka.actor.default-dispatcher-35] INFO  simulation.akka.core.Driver - Round 191 takes 14 ms
+19:48:30.183 [SimsCluster-akka.actor.default-dispatcher-47] INFO  simulation.akka.core.Driver - Round 192 takes 14 ms
+19:48:30.198 [SimsCluster-akka.actor.default-dispatcher-38] INFO  simulation.akka.core.Driver - Round 193 takes 14 ms
+19:48:30.212 [SimsCluster-akka.actor.default-dispatcher-44] INFO  simulation.akka.core.Driver - Round 194 takes 14 ms
+19:48:30.226 [SimsCluster-akka.actor.default-dispatcher-22] INFO  simulation.akka.core.Driver - Round 195 takes 14 ms
+19:48:30.240 [SimsCluster-akka.actor.default-dispatcher-29] INFO  simulation.akka.core.Driver - Round 196 takes 14 ms
+19:48:30.258 [SimsCluster-akka.actor.default-dispatcher-23] INFO  simulation.akka.core.Driver - Round 197 takes 17 ms
+19:48:30.273 [SimsCluster-akka.actor.default-dispatcher-60] INFO  simulation.akka.core.Driver - Round 198 takes 15 ms
+19:48:30.287 [SimsCluster-akka.actor.default-dispatcher-30] INFO  simulation.akka.core.Driver - Round 199 takes 14 ms
+19:48:30.302 [SimsCluster-akka.actor.default-dispatcher-57] INFO  simulation.akka.core.Driver - Round 200 takes 15 ms
+19:48:30.302 [SimsCluster-akka.actor.default-dispatcher-57] INFO  simulation.akka.core.Driver - Average 16 ms
+19:48:30.311 [SimsCluster-akka.actor.default-dispatcher-28] INFO  a.r.RemoteActorRefProvider$RemotingTerminator - Shutting down remote daemon.
+19:48:30.311 [SimsCluster-akka.actor.default-dispatcher-28] INFO  a.r.RemoteActorRefProvider$RemotingTerminator - Remote daemon shut down; proceeding with flushing remote transports.
+19:48:30.311 [SimsCluster-akka.actor.default-dispatcher-28] INFO  akka.cluster.Cluster - Cluster Node [akka://SimsCluster@10.90.39.8:25251] - Marked address [akka://SimsCluster@10.90.39.8:25251] as [Leaving]
+19:48:30.312 [SimsCluster-akka.actor.default-dispatcher-28] INFO  a.r.RemoteActorRefProvider$RemotingTerminator - Remoting shut down.
+Simulation ends!
+1 total machines, 50 total workers, and 10000 actors
+19:48:30.367 [SimsCluster-akka.actor.default-dispatcher-3] INFO  akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+19:48:30.381 [SimsCluster-akka.actor.default-dispatcher-3] INFO  a.r.artery.tcp.ArteryTcpTransport - Remoting started with transport [Artery tcp]; listening on address [akka://SimsCluster@10.90.39.8:25251] with UID [-7202156049058723685]
+19:48:30.381 [SimsCluster-akka.actor.default-dispatcher-3] INFO  akka.cluster.Cluster - Cluster Node [akka://SimsCluster@10.90.39.8:25251] - Starting up, Akka version [2.6.14] ...
+19:48:30.383 [SimsCluster-akka.actor.default-dispatcher-3] INFO  akka.cluster.Cluster - Cluster Node [akka://SimsCluster@10.90.39.8:25251] - Registered cluster JMX MBean [akka:type=Cluster]
+19:48:30.384 [SimsCluster-akka.actor.default-dispatcher-3] INFO  akka.cluster.Cluster - Cluster Node [akka://SimsCluster@10.90.39.8:25251] - Started up successfully
+19:48:30.386 [SimsCluster-akka.actor.default-dispatcher-16] INFO  akka.cluster.sbr.SplitBrainResolver - SBR started. Config: strategy [KeepMajority], stable-after [20 seconds], down-all-when-unstable [15 seconds], selfUniqueAddress [akka://SimsCluster@10.90.39.8:25251#-7202156049058723685], selfDc [default].
+19:48:30.386 [SimsCluster-akka.actor.default-dispatcher-16] INFO  akka.cluster.Cluster - Cluster Node [akka://SimsCluster@10.90.39.8:25251] - Node [akka://SimsCluster@10.90.39.8:25251] is JOINING itself (with roles [Standalone, dc-default], version [0.0.0]) and forming new cluster
+19:48:30.386 [SimsCluster-akka.actor.default-dispatcher-16] INFO  akka.cluster.Cluster - Cluster Node [akka://SimsCluster@10.90.39.8:25251] - is the new leader among reachable nodes (more leaders may exist)
+19:48:30.386 [SimsCluster-akka.actor.default-dispatcher-16] INFO  akka.cluster.Cluster - Cluster Node [akka://SimsCluster@10.90.39.8:25251] - Leader is moving node [akka://SimsCluster@10.90.39.8:25251] to [Up]
+19:48:30.388 [SimsCluster-akka.actor.default-dispatcher-16] INFO  akka.cluster.sbr.SplitBrainResolver - This node is now the leader responsible for taking SBR decisions among the reachable nodes (more leaders may exist).
+19:48:31.472 [SimsCluster-akka.actor.default-dispatcher-32] INFO  simulation.akka.core.Driver - Round 1 takes 36 ms
+19:48:31.507 [SimsCluster-akka.actor.default-dispatcher-57] INFO  simulation.akka.core.Driver - Round 2 takes 34 ms
+19:48:31.535 [SimsCluster-akka.actor.default-dispatcher-62] INFO  simulation.akka.core.Driver - Round 3 takes 27 ms
+19:48:31.562 [SimsCluster-akka.actor.default-dispatcher-57] INFO  simulation.akka.core.Driver - Round 4 takes 27 ms
+19:48:31.585 [SimsCluster-akka.actor.default-dispatcher-25] INFO  simulation.akka.core.Driver - Round 5 takes 23 ms
+19:48:31.611 [SimsCluster-akka.actor.default-dispatcher-54] INFO  simulation.akka.core.Driver - Round 6 takes 26 ms
+19:48:31.638 [SimsCluster-akka.actor.default-dispatcher-16] INFO  simulation.akka.core.Driver - Round 7 takes 27 ms
+19:48:31.662 [SimsCluster-akka.actor.default-dispatcher-50] INFO  simulation.akka.core.Driver - Round 8 takes 24 ms
+19:48:31.686 [SimsCluster-akka.actor.default-dispatcher-24] INFO  simulation.akka.core.Driver - Round 9 takes 24 ms
+19:48:31.708 [SimsCluster-akka.actor.default-dispatcher-60] INFO  simulation.akka.core.Driver - Round 10 takes 22 ms
+19:48:31.732 [SimsCluster-akka.actor.default-dispatcher-54] INFO  simulation.akka.core.Driver - Round 11 takes 23 ms
+19:48:31.756 [SimsCluster-akka.actor.default-dispatcher-53] INFO  simulation.akka.core.Driver - Round 12 takes 24 ms
+19:48:31.780 [SimsCluster-akka.actor.default-dispatcher-63] INFO  simulation.akka.core.Driver - Round 13 takes 24 ms
+19:48:31.805 [SimsCluster-akka.actor.default-dispatcher-35] INFO  simulation.akka.core.Driver - Round 14 takes 25 ms
+19:48:31.829 [SimsCluster-akka.actor.default-dispatcher-55] INFO  simulation.akka.core.Driver - Round 15 takes 24 ms
+19:48:31.852 [SimsCluster-akka.actor.default-dispatcher-59] INFO  simulation.akka.core.Driver - Round 16 takes 23 ms
+19:48:31.878 [SimsCluster-akka.actor.default-dispatcher-37] INFO  simulation.akka.core.Driver - Round 17 takes 25 ms
+19:48:31.902 [SimsCluster-akka.actor.default-dispatcher-62] INFO  simulation.akka.core.Driver - Round 18 takes 24 ms
+19:48:31.927 [SimsCluster-akka.actor.default-dispatcher-43] INFO  simulation.akka.core.Driver - Round 19 takes 24 ms
+19:48:31.954 [SimsCluster-akka.actor.default-dispatcher-26] INFO  simulation.akka.core.Driver - Round 20 takes 27 ms
+19:48:31.984 [SimsCluster-akka.actor.default-dispatcher-57] INFO  simulation.akka.core.Driver - Round 21 takes 30 ms
+19:48:32.010 [SimsCluster-akka.actor.default-dispatcher-49] INFO  simulation.akka.core.Driver - Round 22 takes 26 ms
+19:48:32.035 [SimsCluster-akka.actor.default-dispatcher-26] INFO  simulation.akka.core.Driver - Round 23 takes 24 ms
+19:48:32.061 [SimsCluster-akka.actor.default-dispatcher-38] INFO  simulation.akka.core.Driver - Round 24 takes 26 ms
+19:48:32.086 [SimsCluster-akka.actor.default-dispatcher-27] INFO  simulation.akka.core.Driver - Round 25 takes 25 ms
+19:48:32.111 [SimsCluster-akka.actor.default-dispatcher-62] INFO  simulation.akka.core.Driver - Round 26 takes 25 ms
+19:48:32.138 [SimsCluster-akka.actor.default-dispatcher-62] INFO  simulation.akka.core.Driver - Round 27 takes 27 ms
+19:48:32.168 [SimsCluster-akka.actor.default-dispatcher-46] INFO  simulation.akka.core.Driver - Round 28 takes 30 ms
+19:48:32.193 [SimsCluster-akka.actor.default-dispatcher-44] INFO  simulation.akka.core.Driver - Round 29 takes 25 ms
+19:48:32.214 [SimsCluster-akka.actor.default-dispatcher-49] INFO  simulation.akka.core.Driver - Round 30 takes 21 ms
+19:48:32.238 [SimsCluster-akka.actor.default-dispatcher-47] INFO  simulation.akka.core.Driver - Round 31 takes 24 ms
+19:48:32.259 [SimsCluster-akka.actor.default-dispatcher-47] INFO  simulation.akka.core.Driver - Round 32 takes 21 ms
+19:48:32.279 [SimsCluster-akka.actor.default-dispatcher-41] INFO  simulation.akka.core.Driver - Round 33 takes 20 ms
+19:48:32.300 [SimsCluster-akka.actor.default-dispatcher-3] INFO  simulation.akka.core.Driver - Round 34 takes 21 ms
+19:48:32.320 [SimsCluster-akka.actor.default-dispatcher-62] INFO  simulation.akka.core.Driver - Round 35 takes 20 ms
+19:48:32.343 [SimsCluster-akka.actor.default-dispatcher-59] INFO  simulation.akka.core.Driver - Round 36 takes 23 ms
+19:48:32.364 [SimsCluster-akka.actor.default-dispatcher-52] INFO  simulation.akka.core.Driver - Round 37 takes 21 ms
+19:48:32.384 [SimsCluster-akka.actor.default-dispatcher-61] INFO  simulation.akka.core.Driver - Round 38 takes 20 ms
+19:48:32.408 [SimsCluster-akka.actor.default-dispatcher-56] INFO  simulation.akka.core.Driver - Round 39 takes 24 ms
+19:48:32.428 [SimsCluster-akka.actor.default-dispatcher-30] INFO  simulation.akka.core.Driver - Round 40 takes 20 ms
+19:48:32.448 [SimsCluster-akka.actor.default-dispatcher-21] INFO  simulation.akka.core.Driver - Round 41 takes 20 ms
+19:48:32.469 [SimsCluster-akka.actor.default-dispatcher-51] INFO  simulation.akka.core.Driver - Round 42 takes 20 ms
+19:48:32.489 [SimsCluster-akka.actor.default-dispatcher-24] INFO  simulation.akka.core.Driver - Round 43 takes 20 ms
+19:48:32.508 [SimsCluster-akka.actor.default-dispatcher-44] INFO  simulation.akka.core.Driver - Round 44 takes 19 ms
+19:48:32.531 [SimsCluster-akka.actor.default-dispatcher-63] INFO  simulation.akka.core.Driver - Round 45 takes 23 ms
+19:48:32.550 [SimsCluster-akka.actor.default-dispatcher-57] INFO  simulation.akka.core.Driver - Round 46 takes 19 ms
+19:48:32.570 [SimsCluster-akka.actor.default-dispatcher-22] INFO  simulation.akka.core.Driver - Round 47 takes 20 ms
+19:48:32.593 [SimsCluster-akka.actor.default-dispatcher-53] INFO  simulation.akka.core.Driver - Round 48 takes 23 ms
+19:48:32.614 [SimsCluster-akka.actor.default-dispatcher-51] INFO  simulation.akka.core.Driver - Round 49 takes 21 ms
+19:48:32.634 [SimsCluster-akka.actor.default-dispatcher-36] INFO  simulation.akka.core.Driver - Round 50 takes 20 ms
+19:48:32.655 [SimsCluster-akka.actor.default-dispatcher-31] INFO  simulation.akka.core.Driver - Round 51 takes 21 ms
+19:48:32.675 [SimsCluster-akka.actor.default-dispatcher-63] INFO  simulation.akka.core.Driver - Round 52 takes 20 ms
+19:48:32.695 [SimsCluster-akka.actor.default-dispatcher-18] INFO  simulation.akka.core.Driver - Round 53 takes 20 ms
+19:48:32.716 [SimsCluster-akka.actor.default-dispatcher-43] INFO  simulation.akka.core.Driver - Round 54 takes 21 ms
+19:48:32.735 [SimsCluster-akka.actor.default-dispatcher-59] INFO  simulation.akka.core.Driver - Round 55 takes 19 ms
+19:48:32.756 [SimsCluster-akka.actor.default-dispatcher-62] INFO  simulation.akka.core.Driver - Round 56 takes 20 ms
+19:48:32.778 [SimsCluster-akka.actor.default-dispatcher-57] INFO  simulation.akka.core.Driver - Round 57 takes 22 ms
+19:48:32.799 [SimsCluster-akka.actor.default-dispatcher-16] INFO  simulation.akka.core.Driver - Round 58 takes 20 ms
+19:48:32.819 [SimsCluster-akka.actor.default-dispatcher-53] INFO  simulation.akka.core.Driver - Round 59 takes 20 ms
+19:48:32.839 [SimsCluster-akka.actor.default-dispatcher-32] INFO  simulation.akka.core.Driver - Round 60 takes 20 ms
+19:48:32.859 [SimsCluster-akka.actor.default-dispatcher-22] INFO  simulation.akka.core.Driver - Round 61 takes 20 ms
+19:48:32.879 [SimsCluster-akka.actor.default-dispatcher-22] INFO  simulation.akka.core.Driver - Round 62 takes 20 ms
+19:48:32.899 [SimsCluster-akka.actor.default-dispatcher-31] INFO  simulation.akka.core.Driver - Round 63 takes 20 ms
+19:48:32.919 [SimsCluster-akka.actor.default-dispatcher-51] INFO  simulation.akka.core.Driver - Round 64 takes 20 ms
+19:48:32.943 [SimsCluster-akka.actor.default-dispatcher-16] INFO  simulation.akka.core.Driver - Round 65 takes 24 ms
+19:48:32.963 [SimsCluster-akka.actor.default-dispatcher-60] INFO  simulation.akka.core.Driver - Round 66 takes 20 ms
+19:48:32.984 [SimsCluster-akka.actor.default-dispatcher-43] INFO  simulation.akka.core.Driver - Round 67 takes 21 ms
+19:48:33.004 [SimsCluster-akka.actor.default-dispatcher-43] INFO  simulation.akka.core.Driver - Round 68 takes 20 ms
+19:48:33.024 [SimsCluster-akka.actor.default-dispatcher-59] INFO  simulation.akka.core.Driver - Round 69 takes 20 ms
+19:48:33.044 [SimsCluster-akka.actor.default-dispatcher-3] INFO  simulation.akka.core.Driver - Round 70 takes 20 ms
+19:48:33.065 [SimsCluster-akka.actor.default-dispatcher-19] INFO  simulation.akka.core.Driver - Round 71 takes 20 ms
+19:48:33.085 [SimsCluster-akka.actor.default-dispatcher-43] INFO  simulation.akka.core.Driver - Round 72 takes 20 ms
+19:48:33.106 [SimsCluster-akka.actor.default-dispatcher-36] INFO  simulation.akka.core.Driver - Round 73 takes 21 ms
+19:48:33.127 [SimsCluster-akka.actor.default-dispatcher-3] INFO  simulation.akka.core.Driver - Round 74 takes 21 ms
+19:48:33.148 [SimsCluster-akka.actor.default-dispatcher-58] INFO  simulation.akka.core.Driver - Round 75 takes 21 ms
+19:48:33.168 [SimsCluster-akka.actor.default-dispatcher-28] INFO  simulation.akka.core.Driver - Round 76 takes 20 ms
+19:48:33.188 [SimsCluster-akka.actor.default-dispatcher-19] INFO  simulation.akka.core.Driver - Round 77 takes 20 ms
+19:48:33.206 [SimsCluster-akka.actor.default-dispatcher-51] INFO  simulation.akka.core.Driver - Round 78 takes 18 ms
+19:48:33.227 [SimsCluster-akka.actor.default-dispatcher-23] INFO  simulation.akka.core.Driver - Round 79 takes 21 ms
+19:48:33.248 [SimsCluster-akka.actor.default-dispatcher-30] INFO  simulation.akka.core.Driver - Round 80 takes 21 ms
+19:48:33.268 [SimsCluster-akka.actor.default-dispatcher-53] INFO  simulation.akka.core.Driver - Round 81 takes 20 ms
+19:48:33.288 [SimsCluster-akka.actor.default-dispatcher-21] INFO  simulation.akka.core.Driver - Round 82 takes 20 ms
+19:48:33.308 [SimsCluster-akka.actor.default-dispatcher-22] INFO  simulation.akka.core.Driver - Round 83 takes 20 ms
+19:48:33.330 [SimsCluster-akka.actor.default-dispatcher-30] INFO  simulation.akka.core.Driver - Round 84 takes 21 ms
+19:48:33.350 [SimsCluster-akka.actor.default-dispatcher-27] INFO  simulation.akka.core.Driver - Round 85 takes 20 ms
+19:48:33.370 [SimsCluster-akka.actor.default-dispatcher-36] INFO  simulation.akka.core.Driver - Round 86 takes 20 ms
+19:48:33.390 [SimsCluster-akka.actor.default-dispatcher-18] INFO  simulation.akka.core.Driver - Round 87 takes 20 ms
+19:48:33.412 [SimsCluster-akka.actor.default-dispatcher-51] INFO  simulation.akka.core.Driver - Round 88 takes 22 ms
+19:48:33.432 [SimsCluster-akka.actor.default-dispatcher-33] INFO  simulation.akka.core.Driver - Round 89 takes 20 ms
+19:48:33.453 [SimsCluster-akka.actor.default-dispatcher-24] INFO  simulation.akka.core.Driver - Round 90 takes 20 ms
+19:48:33.473 [SimsCluster-akka.actor.default-dispatcher-48] INFO  simulation.akka.core.Driver - Round 91 takes 20 ms
+19:48:33.494 [SimsCluster-akka.actor.default-dispatcher-53] INFO  simulation.akka.core.Driver - Round 92 takes 21 ms
+19:48:33.514 [SimsCluster-akka.actor.default-dispatcher-48] INFO  simulation.akka.core.Driver - Round 93 takes 20 ms
+19:48:33.534 [SimsCluster-akka.actor.default-dispatcher-63] INFO  simulation.akka.core.Driver - Round 94 takes 20 ms
+19:48:33.554 [SimsCluster-akka.actor.default-dispatcher-53] INFO  simulation.akka.core.Driver - Round 95 takes 20 ms
+19:48:33.574 [SimsCluster-akka.actor.default-dispatcher-57] INFO  simulation.akka.core.Driver - Round 96 takes 20 ms
+19:48:33.594 [SimsCluster-akka.actor.default-dispatcher-51] INFO  simulation.akka.core.Driver - Round 97 takes 20 ms
+19:48:33.614 [SimsCluster-akka.actor.default-dispatcher-63] INFO  simulation.akka.core.Driver - Round 98 takes 20 ms
+19:48:33.634 [SimsCluster-akka.actor.default-dispatcher-39] INFO  simulation.akka.core.Driver - Round 99 takes 20 ms
+19:48:33.654 [SimsCluster-akka.actor.default-dispatcher-18] INFO  simulation.akka.core.Driver - Round 100 takes 20 ms
+19:48:33.673 [SimsCluster-akka.actor.default-dispatcher-50] INFO  simulation.akka.core.Driver - Round 101 takes 19 ms
+19:48:33.693 [SimsCluster-akka.actor.default-dispatcher-51] INFO  simulation.akka.core.Driver - Round 102 takes 20 ms
+19:48:33.714 [SimsCluster-akka.actor.default-dispatcher-31] INFO  simulation.akka.core.Driver - Round 103 takes 20 ms
+19:48:33.734 [SimsCluster-akka.actor.default-dispatcher-32] INFO  simulation.akka.core.Driver - Round 104 takes 20 ms
+19:48:33.754 [SimsCluster-akka.actor.default-dispatcher-19] INFO  simulation.akka.core.Driver - Round 105 takes 20 ms
+19:48:33.774 [SimsCluster-akka.actor.default-dispatcher-51] INFO  simulation.akka.core.Driver - Round 106 takes 20 ms
+19:48:33.794 [SimsCluster-akka.actor.default-dispatcher-23] INFO  simulation.akka.core.Driver - Round 107 takes 20 ms
+19:48:33.815 [SimsCluster-akka.actor.default-dispatcher-57] INFO  simulation.akka.core.Driver - Round 108 takes 21 ms
+19:48:33.835 [SimsCluster-akka.actor.default-dispatcher-43] INFO  simulation.akka.core.Driver - Round 109 takes 20 ms
+19:48:33.855 [SimsCluster-akka.actor.default-dispatcher-57] INFO  simulation.akka.core.Driver - Round 110 takes 20 ms
+19:48:33.875 [SimsCluster-akka.actor.default-dispatcher-60] INFO  simulation.akka.core.Driver - Round 111 takes 20 ms
+19:48:33.894 [SimsCluster-akka.actor.default-dispatcher-53] INFO  simulation.akka.core.Driver - Round 112 takes 19 ms
+19:48:33.919 [SimsCluster-akka.actor.default-dispatcher-28] INFO  simulation.akka.core.Driver - Round 113 takes 24 ms
+19:48:33.942 [SimsCluster-akka.actor.default-dispatcher-42] INFO  simulation.akka.core.Driver - Round 114 takes 23 ms
+19:48:33.963 [SimsCluster-akka.actor.default-dispatcher-55] INFO  simulation.akka.core.Driver - Round 115 takes 21 ms
+19:48:33.983 [SimsCluster-akka.actor.default-dispatcher-47] INFO  simulation.akka.core.Driver - Round 116 takes 20 ms
+19:48:34.003 [SimsCluster-akka.actor.default-dispatcher-22] INFO  simulation.akka.core.Driver - Round 117 takes 20 ms
+19:48:34.028 [SimsCluster-akka.actor.default-dispatcher-19] INFO  simulation.akka.core.Driver - Round 118 takes 24 ms
+19:48:34.047 [SimsCluster-akka.actor.default-dispatcher-51] INFO  simulation.akka.core.Driver - Round 119 takes 19 ms
+19:48:34.068 [SimsCluster-akka.actor.default-dispatcher-3] INFO  simulation.akka.core.Driver - Round 120 takes 21 ms
+19:48:34.088 [SimsCluster-akka.actor.default-dispatcher-3] INFO  simulation.akka.core.Driver - Round 121 takes 19 ms
+19:48:34.106 [SimsCluster-akka.actor.default-dispatcher-30] INFO  simulation.akka.core.Driver - Round 122 takes 18 ms
+19:48:34.126 [SimsCluster-akka.actor.default-dispatcher-58] INFO  simulation.akka.core.Driver - Round 123 takes 20 ms
+19:48:34.145 [SimsCluster-akka.actor.default-dispatcher-41] INFO  simulation.akka.core.Driver - Round 124 takes 19 ms
+19:48:34.169 [SimsCluster-akka.actor.default-dispatcher-32] INFO  simulation.akka.core.Driver - Round 125 takes 24 ms
+19:48:34.189 [SimsCluster-akka.actor.default-dispatcher-55] INFO  simulation.akka.core.Driver - Round 126 takes 20 ms
+19:48:34.209 [SimsCluster-akka.actor.default-dispatcher-47] INFO  simulation.akka.core.Driver - Round 127 takes 20 ms
+19:48:34.229 [SimsCluster-akka.actor.default-dispatcher-37] INFO  simulation.akka.core.Driver - Round 128 takes 20 ms
+19:48:34.250 [SimsCluster-akka.actor.default-dispatcher-35] INFO  simulation.akka.core.Driver - Round 129 takes 21 ms
+19:48:34.270 [SimsCluster-akka.actor.default-dispatcher-3] INFO  simulation.akka.core.Driver - Round 130 takes 20 ms
+19:48:34.291 [SimsCluster-akka.actor.default-dispatcher-40] INFO  simulation.akka.core.Driver - Round 131 takes 21 ms
+19:48:34.311 [SimsCluster-akka.actor.default-dispatcher-48] INFO  simulation.akka.core.Driver - Round 132 takes 20 ms
+19:48:34.331 [SimsCluster-akka.actor.default-dispatcher-22] INFO  simulation.akka.core.Driver - Round 133 takes 20 ms
+19:48:34.349 [SimsCluster-akka.actor.default-dispatcher-37] INFO  simulation.akka.core.Driver - Round 134 takes 18 ms
+19:48:34.370 [SimsCluster-akka.actor.default-dispatcher-35] INFO  simulation.akka.core.Driver - Round 135 takes 21 ms
+19:48:34.390 [SimsCluster-akka.actor.default-dispatcher-48] INFO  simulation.akka.core.Driver - Round 136 takes 20 ms
+19:48:34.412 [SimsCluster-akka.actor.default-dispatcher-35] INFO  simulation.akka.core.Driver - Round 137 takes 22 ms
+19:48:34.432 [SimsCluster-akka.actor.default-dispatcher-52] INFO  simulation.akka.core.Driver - Round 138 takes 20 ms
+19:48:34.452 [SimsCluster-akka.actor.default-dispatcher-40] INFO  simulation.akka.core.Driver - Round 139 takes 20 ms
+19:48:34.473 [SimsCluster-akka.actor.default-dispatcher-50] INFO  simulation.akka.core.Driver - Round 140 takes 21 ms
+19:48:34.493 [SimsCluster-akka.actor.default-dispatcher-57] INFO  simulation.akka.core.Driver - Round 141 takes 20 ms
+19:48:34.513 [SimsCluster-akka.actor.default-dispatcher-43] INFO  simulation.akka.core.Driver - Round 142 takes 20 ms
+19:48:34.533 [SimsCluster-akka.actor.default-dispatcher-41] INFO  simulation.akka.core.Driver - Round 143 takes 20 ms
+19:48:34.554 [SimsCluster-akka.actor.default-dispatcher-32] INFO  simulation.akka.core.Driver - Round 144 takes 20 ms
+19:48:34.574 [SimsCluster-akka.actor.default-dispatcher-47] INFO  simulation.akka.core.Driver - Round 145 takes 20 ms
+19:48:34.594 [SimsCluster-akka.actor.default-dispatcher-27] INFO  simulation.akka.core.Driver - Round 146 takes 20 ms
+19:48:34.614 [SimsCluster-akka.actor.default-dispatcher-40] INFO  simulation.akka.core.Driver - Round 147 takes 20 ms
+19:48:34.634 [SimsCluster-akka.actor.default-dispatcher-24] INFO  simulation.akka.core.Driver - Round 148 takes 20 ms
+19:48:34.654 [SimsCluster-akka.actor.default-dispatcher-43] INFO  simulation.akka.core.Driver - Round 149 takes 20 ms
+19:48:34.674 [SimsCluster-akka.actor.default-dispatcher-44] INFO  simulation.akka.core.Driver - Round 150 takes 20 ms
+19:48:34.693 [SimsCluster-akka.actor.default-dispatcher-50] INFO  simulation.akka.core.Driver - Round 151 takes 19 ms
+19:48:34.714 [SimsCluster-akka.actor.default-dispatcher-50] INFO  simulation.akka.core.Driver - Round 152 takes 20 ms
+19:48:34.734 [SimsCluster-akka.actor.default-dispatcher-26] INFO  simulation.akka.core.Driver - Round 153 takes 20 ms
+19:48:34.755 [SimsCluster-akka.actor.default-dispatcher-22] INFO  simulation.akka.core.Driver - Round 154 takes 20 ms
+19:48:34.776 [SimsCluster-akka.actor.default-dispatcher-49] INFO  simulation.akka.core.Driver - Round 155 takes 20 ms
+19:48:34.796 [SimsCluster-akka.actor.default-dispatcher-26] INFO  simulation.akka.core.Driver - Round 156 takes 20 ms
+19:48:34.816 [SimsCluster-akka.actor.default-dispatcher-31] INFO  simulation.akka.core.Driver - Round 157 takes 20 ms
+19:48:34.836 [SimsCluster-akka.actor.default-dispatcher-62] INFO  simulation.akka.core.Driver - Round 158 takes 20 ms
+19:48:34.856 [SimsCluster-akka.actor.default-dispatcher-59] INFO  simulation.akka.core.Driver - Round 159 takes 20 ms
+19:48:34.876 [SimsCluster-akka.actor.default-dispatcher-53] INFO  simulation.akka.core.Driver - Round 160 takes 20 ms
+19:48:34.896 [SimsCluster-akka.actor.default-dispatcher-47] INFO  simulation.akka.core.Driver - Round 161 takes 20 ms
+19:48:34.916 [SimsCluster-akka.actor.default-dispatcher-37] INFO  simulation.akka.core.Driver - Round 162 takes 20 ms
+19:48:34.936 [SimsCluster-akka.actor.default-dispatcher-36] INFO  simulation.akka.core.Driver - Round 163 takes 20 ms
+19:48:34.956 [SimsCluster-akka.actor.default-dispatcher-62] INFO  simulation.akka.core.Driver - Round 164 takes 20 ms
+19:48:34.977 [SimsCluster-akka.actor.default-dispatcher-47] INFO  simulation.akka.core.Driver - Round 165 takes 20 ms
+19:48:34.997 [SimsCluster-akka.actor.default-dispatcher-40] INFO  simulation.akka.core.Driver - Round 166 takes 20 ms
+19:48:35.018 [SimsCluster-akka.actor.default-dispatcher-24] INFO  simulation.akka.core.Driver - Round 167 takes 21 ms
+19:48:35.038 [SimsCluster-akka.actor.default-dispatcher-22] INFO  simulation.akka.core.Driver - Round 168 takes 20 ms
+19:48:35.059 [SimsCluster-akka.actor.default-dispatcher-24] INFO  simulation.akka.core.Driver - Round 169 takes 20 ms
+19:48:35.079 [SimsCluster-akka.actor.default-dispatcher-32] INFO  simulation.akka.core.Driver - Round 170 takes 20 ms
+19:48:35.098 [SimsCluster-akka.actor.default-dispatcher-47] INFO  simulation.akka.core.Driver - Round 171 takes 19 ms
+19:48:35.119 [SimsCluster-akka.actor.default-dispatcher-50] INFO  simulation.akka.core.Driver - Round 172 takes 20 ms
+19:48:35.139 [SimsCluster-akka.actor.default-dispatcher-20] INFO  simulation.akka.core.Driver - Round 173 takes 20 ms
+19:48:35.159 [SimsCluster-akka.actor.default-dispatcher-59] INFO  simulation.akka.core.Driver - Round 174 takes 20 ms
+19:48:35.179 [SimsCluster-akka.actor.default-dispatcher-37] INFO  simulation.akka.core.Driver - Round 175 takes 20 ms
+19:48:35.200 [SimsCluster-akka.actor.default-dispatcher-62] INFO  simulation.akka.core.Driver - Round 176 takes 21 ms
+19:48:35.220 [SimsCluster-akka.actor.default-dispatcher-47] INFO  simulation.akka.core.Driver - Round 177 takes 20 ms
+19:48:35.240 [SimsCluster-akka.actor.default-dispatcher-39] INFO  simulation.akka.core.Driver - Round 178 takes 20 ms
+19:48:35.260 [SimsCluster-akka.actor.default-dispatcher-57] INFO  simulation.akka.core.Driver - Round 179 takes 20 ms
+19:48:35.281 [SimsCluster-akka.actor.default-dispatcher-20] INFO  simulation.akka.core.Driver - Round 180 takes 20 ms
+19:48:35.300 [SimsCluster-akka.actor.default-dispatcher-21] INFO  simulation.akka.core.Driver - Round 181 takes 19 ms
+19:48:35.321 [SimsCluster-akka.actor.default-dispatcher-25] INFO  simulation.akka.core.Driver - Round 182 takes 21 ms
+19:48:35.341 [SimsCluster-akka.actor.default-dispatcher-38] INFO  simulation.akka.core.Driver - Round 183 takes 20 ms
+19:48:35.361 [SimsCluster-akka.actor.default-dispatcher-62] INFO  simulation.akka.core.Driver - Round 184 takes 20 ms
+19:48:35.381 [SimsCluster-akka.actor.default-dispatcher-41] INFO  simulation.akka.core.Driver - Round 185 takes 20 ms
+19:48:35.478 [SimsCluster-akka.actor.default-dispatcher-44] INFO  simulation.akka.core.Driver - Round 186 takes 97 ms
+19:48:35.498 [SimsCluster-akka.actor.default-dispatcher-63] INFO  simulation.akka.core.Driver - Round 187 takes 20 ms
+19:48:35.518 [SimsCluster-akka.actor.default-dispatcher-51] INFO  simulation.akka.core.Driver - Round 188 takes 19 ms
+19:48:35.538 [SimsCluster-akka.actor.default-dispatcher-63] INFO  simulation.akka.core.Driver - Round 189 takes 20 ms
+19:48:35.557 [SimsCluster-akka.actor.default-dispatcher-33] INFO  simulation.akka.core.Driver - Round 190 takes 19 ms
+19:48:35.576 [SimsCluster-akka.actor.default-dispatcher-24] INFO  simulation.akka.core.Driver - Round 191 takes 19 ms
+19:48:35.596 [SimsCluster-akka.actor.default-dispatcher-62] INFO  simulation.akka.core.Driver - Round 192 takes 20 ms
+19:48:35.615 [SimsCluster-akka.actor.default-dispatcher-34] INFO  simulation.akka.core.Driver - Round 193 takes 19 ms
+19:48:35.634 [SimsCluster-akka.actor.default-dispatcher-20] INFO  simulation.akka.core.Driver - Round 194 takes 19 ms
+19:48:35.654 [SimsCluster-akka.actor.default-dispatcher-34] INFO  simulation.akka.core.Driver - Round 195 takes 20 ms
+19:48:35.673 [SimsCluster-akka.actor.default-dispatcher-21] INFO  simulation.akka.core.Driver - Round 196 takes 19 ms
+19:48:35.693 [SimsCluster-akka.actor.default-dispatcher-19] INFO  simulation.akka.core.Driver - Round 197 takes 20 ms
+19:48:35.712 [SimsCluster-akka.actor.default-dispatcher-31] INFO  simulation.akka.core.Driver - Round 198 takes 19 ms
+19:48:35.731 [SimsCluster-akka.actor.default-dispatcher-24] INFO  simulation.akka.core.Driver - Round 199 takes 19 ms
+19:48:35.751 [SimsCluster-akka.actor.default-dispatcher-22] INFO  simulation.akka.core.Driver - Round 200 takes 19 ms
+19:48:35.752 [SimsCluster-akka.actor.default-dispatcher-22] INFO  simulation.akka.core.Driver - Average 21 ms
+19:48:35.759 [SimsCluster-akka.actor.default-dispatcher-33] INFO  a.r.RemoteActorRefProvider$RemotingTerminator - Shutting down remote daemon.
+19:48:35.760 [SimsCluster-akka.actor.default-dispatcher-33] INFO  a.r.RemoteActorRefProvider$RemotingTerminator - Remote daemon shut down; proceeding with flushing remote transports.
+19:48:35.760 [SimsCluster-akka.actor.default-dispatcher-33] INFO  akka.cluster.Cluster - Cluster Node [akka://SimsCluster@10.90.39.8:25251] - Marked address [akka://SimsCluster@10.90.39.8:25251] as [Leaving]
+19:48:35.761 [SimsCluster-akka.actor.default-dispatcher-52] INFO  a.r.RemoteActorRefProvider$RemotingTerminator - Remoting shut down.
+Simulation ends!
+[WARN] [04/19/2023 19:48:35.766] [SimsCluster-akka.actor.internal-dispatcher-65] [CoordinatedShutdown(akka://SimsCluster)] Task [exiting-completed] failed in phase [cluster-exiting-done]: Recipient [Actor[akka://SimsCluster/system/cluster/core/daemon#910785077]] had already been terminated. Message of type [akka.cluster.InternalClusterAction$ExitingCompleted$] was sent by [Actor[akka://SimsCluster/system/cluster/core/daemon#910785077]].
+[success] Total time: 24 s, completed Apr 19, 2023 7:48:35 PM
