@@ -1,3 +1,4 @@
+# GameOfLife, load graph as a map (input: edgeFile)
 log/0/compInterval_gameOfLife_cores50_cfreq1_cint5_225201:22:52:36.210 [SimsCluster-akka.actor.default-dispatcher-52] INFO  simulation.akka.core.Driver - Average 6 ms
 log/0/compInterval_gameOfLife_cores50_cfreq1_cint10_225309:22:53:24.573 [SimsCluster-akka.actor.default-dispatcher-60] INFO  simulation.akka.core.Driver - Average 3 ms
 log/0/compInterval_gameOfLife_cores50_cfreq1_cint20_225357:22:54:13.076 [SimsCluster-akka.actor.default-dispatcher-54] INFO  simulation.akka.core.Driver - Average 2 ms
@@ -9,6 +10,19 @@ log/1/compInterval_gameOfLife_cores50_cfreq1_cint20_225623:22:56:38.675 [SimsClu
 log/2/compInterval_gameOfLife_cores50_cfreq1_cint5_225711:22:57:27.323 [SimsCluster-akka.actor.default-dispatcher-48] INFO  simulation.akka.core.Driver - Average 4 ms
 log/2/compInterval_gameOfLife_cores50_cfreq1_cint10_225800:22:58:16.597 [SimsCluster-akka.actor.default-dispatcher-43] INFO  simulation.akka.core.Driver - Average 4 ms
 log/2/compInterval_gameOfLife_cores50_cfreq1_cint20_225849:22:59:04.759 [SimsCluster-akka.actor.default-dispatcher-38] INFO  simulation.akka.core.Driver - Average 2 ms
+
+# GameOfLife, sequential vertices generated dynamically (input: width, height)
+19:48:55.303 [SimsCluster-akka.actor.default-dispatcher-48] INFO  simulation.akka.core.Driver - Average 1 ms
+19:48:56.686 [SimsCluster-akka.actor.default-dispatcher-40] INFO  simulation.akka.core.Driver - Average 0 ms
+19:48:57.974 [SimsCluster-akka.actor.default-dispatcher-63] INFO  simulation.akka.core.Driver - Average 0 ms
+
+19:49:17.543 [SimsCluster-akka.actor.default-dispatcher-26] INFO  simulation.akka.core.Driver - Average 1 ms
+19:49:18.941 [SimsCluster-akka.actor.default-dispatcher-6] INFO  simulation.akka.core.Driver - Average 0 ms
+19:49:20.361 [SimsCluster-akka.actor.default-dispatcher-65] INFO  simulation.akka.core.Driver - Average 0 ms
+
+19:49:40.601 [SimsCluster-akka.actor.default-dispatcher-45] INFO  simulation.akka.core.Driver - Average 1 ms
+19:49:41.982 [SimsCluster-akka.actor.default-dispatcher-65] INFO  simulation.akka.core.Driver - Average 0 ms
+19:49:43.623 [SimsCluster-akka.actor.default-dispatcher-57] INFO  simulation.akka.core.Driver - Average 2 ms
 
 stockMarket_compInterval_1:22:39:23.456 [SimsCluster-akka.actor.default-dispatcher-38] INFO  simulation.akka.core.Driver - Average 12 ms
 stockMarket_compInterval_1:22:39:25.334 [SimsCluster-akka.actor.default-dispatcher-23] INFO  simulation.akka.core.Driver - Average 2 ms
