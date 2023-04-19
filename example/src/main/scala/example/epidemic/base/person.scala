@@ -9,10 +9,13 @@ import example.epidemic._
 
 @lift
 class Person(val age: Int, val cfreq: Int, val interval: Int) extends Actor {
+    // Move all local vars up to class variables
     val symptomatic: Boolean = Random.nextBoolean()
     var health: Int = 0
     var vulnerability: Int = 0
     var daysInfected: Int = 0
+    var m: Option[Message] = None
+    var selfRisk: Double = 0
 
     def main(): Unit = {
         vulnerability = if (age > 60) 1 else 0
@@ -22,7 +25,7 @@ class Person(val age: Int, val cfreq: Int, val interval: Int) extends Actor {
 
         while (true) {
             if (health != SIRModel.Deceased) {
-                var m = receiveMessage()
+                m = receiveMessage()
                 while (m.isDefined){
                     if (health == 0) {
                         var personalRisk = m.get.value
@@ -38,7 +41,7 @@ class Person(val age: Int, val cfreq: Int, val interval: Int) extends Actor {
 
                 // Meet with contacts 
                 if (health == SIRModel.Infectious) {
-                    val selfRisk = SIRModel.infectiousness(health, symptomatic)
+                    selfRisk = SIRModel.infectiousness(health, symptomatic)
                     connectedAgentIds.foreach(i => {
                         sendMessages.getOrElseUpdate(i, new ListBuffer[Message]()).appendAll(Range(0, cfreq).map(i => {
                             val msg = new Message()

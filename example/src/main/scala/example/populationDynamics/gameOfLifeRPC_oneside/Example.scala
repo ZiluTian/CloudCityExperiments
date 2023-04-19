@@ -5,24 +5,31 @@ import scala.collection.mutable.{Map => MutMap}
 
 object MainInit {
     val liftedMain = meta.classLifting.liteLift {
-        def apply(width: Int, height: Int): List[Actor] = {
-            val totalPoints: Int = width * height
-            // 2D space
-            val neighborRadius: Int = 1
-
-            val points = (1 to totalPoints).map(x => {
-                if (Random.nextBoolean()){
+        def apply(width: Int, height: Int): IndexedSeq[Actor] = {
+            val cells = Range(0, width * height).map(x => {
+                val cell = if (Random.nextBoolean()){
                     new Cell(1)
                 } else {
                     new Cell(0)
                 }
-            }).toList
-            val offset: Int = points(0).id.toInt
-            val graph = cloudcity.lib.Graph.GenerateGraph.Torus2DGraph(width, height, offset)
-            points.foreach(p => {
-                p.connectedAgents = graph(p.id).map(i => points(i.toInt - offset))
+                cell.id = x
+                cell
             })
-            points
+
+            cells.map(cell => {
+                cell.connectedAgents = {
+                        val x = cell.id % width
+                        val y = cell.id / width
+                        for {
+                            i <- -1 to 1
+                            j <- -1 to 1
+                            if !(i == 0 && j == 0)
+                                dx = (x + i + width) % width
+                                dy = (y + j + height) % height
+                        } yield dy * width + dx
+                    }.map(i => cells(i.toInt))
+                cell
+            })
         }
     }
 }

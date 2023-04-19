@@ -8,11 +8,11 @@ import scala.collection.mutable.{Map => MutMap}
 
 @lift
 class Cell(var alive: Int) extends Actor {    
-    var aliveNeighbors: MutMap[Int, Int] = MutMap[Int, Int]()
+    var aliveNeighbors = MutMap[Long, Int]()
     var currentAliveNeighbors: Int = 0
 
     @transparencyPropagating
-    def tell(key: Int, state: Int): Int = {
+    def tell(key: Long, state: Int): Int = {
       // aliveNeighbors = aliveNeighbors + (key, state)
       aliveNeighbors.update(key, aliveNeighbors.getOrElse(key, 0) + state)
       aliveNeighbors(key)

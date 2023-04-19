@@ -5,7 +5,7 @@ import scala.util.Random
 
 object MainInit {
     val liftedMain = meta.classLifting.liteLift {
-        def apply(populationPerMachine: Int, p: Double, sbm: Boolean, totalMachines: Int): List[Actor] = {
+        def apply(populationPerMachine: Int, p: Double, sbm: Boolean, totalMachines: Int): IndexedSeq[Actor] = {
             val lastId = meta.runtime.Actor.lastAgentId.toInt
 
             val citizens = (1 to populationPerMachine).map(c => { new Person(Random.nextInt(90) + 10) })
@@ -21,7 +21,7 @@ object MainInit {
                 })
             }
             
-            citizens.toList
+            citizens
         }
     }
 }

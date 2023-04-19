@@ -21,14 +21,14 @@ class Cell(var alive: Int) extends Actor {
       markAllowDirectAccess("tell")
         while(true) {
           connectedAgents.map(x => 
-            x.asInstanceOf[Cell]).foreach(v => callAndForget(v.tell((time+1)%2, alive), 1)
+            x.asInstanceOf[Cell]).foreach(v => callAndForget(v.tell((time.toInt+1) % 2, alive), 1)
           )
           waitRounds(1)
-          aliveNeighbors((time+1)%2) = 0
+          aliveNeighbors((time.toInt+1)%2) = 0
           handleRPC()          
-          if (alive==1 && (aliveNeighbors(time%2) > 3 || aliveNeighbors(time%2) < 2)) {
+          if (alive==1 && (aliveNeighbors(time.toInt % 2) > 3 || aliveNeighbors(time.toInt % 2) < 2)) {
             alive = 0
-          } else if (alive==0 && aliveNeighbors(time%2) ==3) {
+          } else if (alive==0 && aliveNeighbors(time.toInt % 2) ==3) {
             alive = 1
           }
           waitRounds(1)

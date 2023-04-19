@@ -7,14 +7,14 @@ import cloudcity.lib.Graph.LoadGraph
 
 object MainInit {
     val liftedMain = meta.classLifting.liteLift {
-        def apply(edgeFilePath: String, cfreq: Int, interval: Int): List[Actor] = {
+        def apply(edgeFilePath: String, cfreq: Int, interval: Int): IndexedSeq[Actor] = {
             var edges = LoadGraph(edgeFilePath)
             edges.map(i => {
                 val person = new Person(Random.nextInt(90) + 10, cfreq, interval)
                 person.id = i._1
                 person.connectedAgentIds = i._2
                 person
-            }).toList
+            }).toVector
         }
     }
 }
