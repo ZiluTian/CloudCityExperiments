@@ -1,0 +1,56 @@
+# timeseries, increase total agents from 1k to 100k
+21:08:56.522 [SimsCluster-akka.actor.default-dispatcher-43] INFO  simulation.akka.core.Driver - Average 6 ms
+21:08:59.269 [SimsCluster-akka.actor.default-dispatcher-52] INFO  simulation.akka.core.Driver - Average 7 ms
+21:09:05.241 [SimsCluster-akka.actor.default-dispatcher-60] INFO  simulation.akka.core.Driver - Average 23 ms
+21:09:26.414 [SimsCluster-akka.actor.default-dispatcher-35] INFO  simulation.akka.core.Driver - Average 99 ms
+21:10:12.958 [SimsCluster-akka.actor.default-dispatcher-30] INFO  simulation.akka.core.Driver - Average 225 ms
+
+21:10:30.153 [SimsCluster-akka.actor.default-dispatcher-21] INFO  simulation.akka.core.Driver - Average 6 ms
+21:10:32.644 [SimsCluster-akka.actor.default-dispatcher-33] INFO  simulation.akka.core.Driver - Average 5 ms
+21:10:36.889 [SimsCluster-akka.actor.default-dispatcher-53] INFO  simulation.akka.core.Driver - Average 15 ms
+21:10:57.151 [SimsCluster-akka.actor.default-dispatcher-49] INFO  simulation.akka.core.Driver - Average 94 ms
+21:11:37.084 [SimsCluster-akka.actor.default-dispatcher-42] INFO  simulation.akka.core.Driver - Average 186 ms
+
+21:11:56.514 [SimsCluster-akka.actor.default-dispatcher-5] INFO  simulation.akka.core.Driver - Average 6 ms
+21:11:59.044 [SimsCluster-akka.actor.default-dispatcher-68] INFO  simulation.akka.core.Driver - Average 6 ms
+21:12:03.293 [SimsCluster-akka.actor.default-dispatcher-48] INFO  simulation.akka.core.Driver - Average 15 ms
+21:12:23.104 [SimsCluster-akka.actor.default-dispatcher-65] INFO  simulation.akka.core.Driver - Average 92 ms
+21:13:05.460 [SimsCluster-akka.actor.default-dispatcher-60] INFO  simulation.akka.core.Driver - Average 199 ms
+
+# Q1
+21:13:23.323 [SimsCluster-akka.actor.default-dispatcher-69] INFO  simulation.akka.core.Driver - Average 6 ms
+21:13:26.074 [SimsCluster-akka.actor.default-dispatcher-42] INFO  simulation.akka.core.Driver - Average 7 ms
+21:13:29.913 [SimsCluster-akka.actor.default-dispatcher-44] INFO  simulation.akka.core.Driver - Average 13 ms
+21:13:42.564 [SimsCluster-akka.actor.default-dispatcher-41] INFO  simulation.akka.core.Driver - Average 30 ms
+21:14:05.946 [SimsCluster-akka.actor.default-dispatcher-21] INFO  simulation.akka.core.Driver - Average 58 ms
+
+21:14:23.404 [SimsCluster-akka.actor.default-dispatcher-53] INFO  simulation.akka.core.Driver - Average 6 ms
+21:14:26.002 [SimsCluster-akka.actor.default-dispatcher-53] INFO  simulation.akka.core.Driver - Average 6 ms
+21:14:29.479 [SimsCluster-akka.actor.default-dispatcher-56] INFO  simulation.akka.core.Driver - Average 11 ms
+21:14:40.424 [SimsCluster-akka.actor.default-dispatcher-59] INFO  simulation.akka.core.Driver - Average 31 ms
+21:15:00.992 [SimsCluster-akka.actor.default-dispatcher-40] INFO  simulation.akka.core.Driver - Average 60 ms
+
+21:15:17.717 [SimsCluster-akka.actor.default-dispatcher-32] INFO  simulation.akka.core.Driver - Average 5 ms
+21:15:20.347 [SimsCluster-akka.actor.default-dispatcher-49] INFO  simulation.akka.core.Driver - Average 6 ms
+21:15:23.766 [SimsCluster-akka.actor.default-dispatcher-49] INFO  simulation.akka.core.Driver - Average 11 ms
+21:15:34.536 [SimsCluster-akka.actor.default-dispatcher-25] INFO  simulation.akka.core.Driver - Average 29 ms
+21:15:55.041 [SimsCluster-akka.actor.default-dispatcher-27] INFO  simulation.akka.core.Driver - Average 60 ms
+
+# Q2
+gameOfLife_deforestation_mode3_1:21:33:03.700 [SimsCluster-akka.actor.default-dispatcher-40] INFO  simulation.akka.core.Driver - Average 6 ms
+gameOfLife_deforestation_mode3_1:21:33:06.451 [SimsCluster-akka.actor.default-dispatcher-37] INFO  simulation.akka.core.Driver - Average 7 ms
+gameOfLife_deforestation_mode3_1:21:33:10.217 [SimsCluster-akka.actor.default-dispatcher-24] INFO  simulation.akka.core.Driver - Average 12 ms
+gameOfLife_deforestation_mode3_1:21:33:22.555 [SimsCluster-akka.actor.default-dispatcher-23] INFO  simulation.akka.core.Driver - Average 25 ms
+gameOfLife_deforestation_mode3_1:21:33:46.144 [SimsCluster-akka.actor.default-dispatcher-50] INFO  simulation.akka.core.Driver - Average 45 ms
+
+gameOfLife_deforestation_mode3_2:21:34:03.337 [SimsCluster-akka.actor.default-dispatcher-40] INFO  simulation.akka.core.Driver - Average 6 ms
+gameOfLife_deforestation_mode3_2:21:34:06.061 [SimsCluster-akka.actor.default-dispatcher-54] INFO  simulation.akka.core.Driver - Average 7 ms
+gameOfLife_deforestation_mode3_2:21:34:09.896 [SimsCluster-akka.actor.default-dispatcher-39] INFO  simulation.akka.core.Driver - Average 13 ms
+gameOfLife_deforestation_mode3_2:21:34:22.221 [SimsCluster-akka.actor.default-dispatcher-34] INFO  simulation.akka.core.Driver - Average 26 ms
+gameOfLife_deforestation_mode3_2:21:34:45.775 [SimsCluster-akka.actor.default-dispatcher-58] INFO  simulation.akka.core.Driver - Average 46 ms
+
+gameOfLife_deforestation_mode3_3:21:35:03.447 [SimsCluster-akka.actor.default-dispatcher-34] INFO  simulation.akka.core.Driver - Average 6 ms
+gameOfLife_deforestation_mode3_3:21:35:06.201 [SimsCluster-akka.actor.default-dispatcher-3] INFO  simulation.akka.core.Driver - Average 7 ms
+gameOfLife_deforestation_mode3_3:21:35:10.064 [SimsCluster-akka.actor.default-dispatcher-35] INFO  simulation.akka.core.Driver - Average 13 ms
+gameOfLife_deforestation_mode3_3:21:35:22.597 [SimsCluster-akka.actor.default-dispatcher-50] INFO  simulation.akka.core.Driver - Average 23 ms
+gameOfLife_deforestation_mode3_3:21:35:46.472 [SimsCluster-akka.actor.default-dispatcher-32] INFO  simulation.akka.core.Driver - Average 45 ms

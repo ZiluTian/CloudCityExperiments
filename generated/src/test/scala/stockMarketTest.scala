@@ -15,7 +15,6 @@ object stockMarketStandalone {
                 // scale-up test
                 List(999, 4999, 9999, 49999, 99999).foreach(traders => {
                     val agents = generated.example.stockMarket.base.InitData(1, traders, 1, 1)
-                    API.OptimizationConfig.mergedWorker()
                     API.Simulate(agents, totalTurns, role, port)
                 })
             }
@@ -24,7 +23,6 @@ object stockMarketStandalone {
                 // communication frequency
                 List(10, 20, 30).foreach(cfreq => {
                     val agents = generated.example.stockMarket.base.InitData(1, 9999, cfreq, 1)
-                    API.OptimizationConfig.mergedWorker()
                     API.Simulate(agents, totalTurns, role, port)
                 })
             }
@@ -33,7 +31,6 @@ object stockMarketStandalone {
                 // computation interval
                 List(5, 10, 20).foreach(compInterval => {
                     val agents = generated.example.stockMarket.base.InitData(1, 9999, 1, compInterval)
-                    API.OptimizationConfig.mergedWorker()
                     API.Simulate(agents, totalTurns, role, port)
                 })
             }
@@ -41,12 +38,10 @@ object stockMarketStandalone {
             case 4 => {
                 // generalized double-buffering
                 val agents = generated.example.stockMarket.v6.InitData(1, 9999)
-                API.OptimizationConfig.mergedWorker()
                 API.Simulate(agents, totalTurns, role, port)
 
                 // same semantics as generalized double-buffering, but do not allow dma
                 val agents2 = generated.example.stockMarket.v7.InitData(1, 9999)
-                API.OptimizationConfig.mergedWorker()
                 API.Simulate(agents2, totalTurns, role, port)
             }
         }

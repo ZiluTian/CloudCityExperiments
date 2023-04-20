@@ -15,21 +15,43 @@ object epidemicsStandalone {
         mode match {
             case 1 => {
                 val agents = generated.example.epidemic.base.InitData(edgeFile, cfreq, cinterval)
-                API.OptimizationConfig.mergedWorker()
                 val snapshot1 = API.Simulate(agents, totalTurns, role, port)
             }
 
             case 2=> {
                 // Generalized double-buffering, with delayed processing 
                 val agents = generated.example.epidemic.dma.InitData(edgeFile)
-                API.OptimizationConfig.mergedWorker()
                 val snapshot1 = API.Simulate(agents, totalTurns, role, port)
             }
 
             case 3 => {
                 val agents = generated.example.epidemic.nodma.InitData(edgeFile)
-                API.OptimizationConfig.mergedWorker()
                 val snapshot1 = API.Simulate(agents, totalTurns, role, port)
+            }
+        }
+    }
+}
+
+object epidemicsStandaloneDynamic {
+    def main(args: Array[String]): Unit = {
+        val mode: Int = args(0).toInt
+        val edgeProb: Double = 0.01
+        val totalTurns: Int = 50
+        var role: String = "Standalone"
+        var port: Int = 25251
+
+        mode match {
+            case 1 => { // scaleup, ERM
+                List(1000, 5000, 10000, 50000, 100000).foreach(i => {
+                    val agents = generated.example.epidemic.baseRandGraph.InitData(i, edgeProb, 1, 1, 1)
+                    API.Simulate(agents, totalTurns, role, port)
+                })
+            }
+            case 2 => { // scaleup, SBM
+                List(1000, 5000, 10000, 50000, 100000).foreach(i => {
+                    val agents = generated.example.epidemic.baseRandGraph.InitData((i / 5).toInt, edgeProb, 5, 1, 1)
+                    API.Simulate(agents, totalTurns, role, port)
+                })
             }
         }
     }

@@ -1,0 +1,21 @@
+stockMarket_scaleout_1:13:32:11.742 [SimsCluster-akka.actor.default-dispatcher-63] INFO  simulation.akka.core.Driver - Average 62 ms
+stockMarket_scaleout_1:13:32:28.062 [SimsCluster-akka.actor.default-dispatcher-51] INFO  simulation.akka.core.Driver - Average 74 ms
+stockMarket_scaleout_1:13:32:50.166 [SimsCluster-akka.actor.default-dispatcher-55] INFO  simulation.akka.core.Driver - Average 104 ms
+stockMarket_scaleout_2:13:33:18.731 [SimsCluster-akka.actor.default-dispatcher-37] INFO  simulation.akka.core.Driver - Average 64 ms
+stockMarket_scaleout_2:13:33:35.474 [SimsCluster-akka.actor.default-dispatcher-30] INFO  simulation.akka.core.Driver - Average 76 ms
+stockMarket_scaleout_2:13:33:57.737 [SimsCluster-akka.actor.default-dispatcher-22] INFO  simulation.akka.core.Driver - Average 104 ms
+stockMarket_scaleout_3:13:34:25.588 [SimsCluster-akka.actor.default-dispatcher-52] INFO  simulation.akka.core.Driver - Average 63 ms
+stockMarket_scaleout_3:13:34:41.938 [SimsCluster-akka.actor.default-dispatcher-65] INFO  simulation.akka.core.Driver - Average 74 ms
+stockMarket_scaleout_3:13:35:04.089 [SimsCluster-akka.actor.default-dispatcher-41] INFO  simulation.akka.core.Driver - Average 104 ms
+
+log/0/scaleout_ERM_cores50_cfreq1_cint1_134001:13:40:25.409 [SimsCluster-akka.actor.default-dispatcher-44] INFO  simulation.akka.core.Driver - Average 96 ms
+log/0/scaleout_ERM_cores50_cfreq1_cint1_134026:13:41:04.507 [SimsCluster-akka.actor.default-dispatcher-48] INFO  simulation.akka.core.Driver - Average 224 ms
+log/0/scaleout_ERM_cores50_cfreq1_cint1_134105:13:41:59.640 [SimsCluster-akka.actor.default-dispatcher-39] INFO  simulation.akka.core.Driver - Average 378 ms
+
+log/0/scaleout_gameOfLife_cores50_cfreq1_cint1_133832:13:39:12.174 [SimsCluster-akka.actor.default-dispatcher-62] INFO  simulation.akka.core.Driver - Average 23 ms
+log/0/scaleout_gameOfLife_cores50_cfreq1_cint1_133913:13:39:35.138 [SimsCluster-akka.actor.default-dispatcher-37] INFO  simulation.akka.core.Driver - Average 33 ms
+log/0/scaleout_gameOfLife_cores50_cfreq1_cint1_133936:13:40:00.184 [SimsCluster-akka.actor.default-dispatcher-35] INFO  simulation.akka.core.Driver - Average 45 ms
+
+log/0/scaleout_SBM_cores50_cfreq1_cint1_134200:13:42:21.263 [SimsCluster-akka.actor.default-dispatcher-48] INFO  simulation.akka.core.Driver - Average 42 ms
+log/0/scaleout_SBM_cores50_cfreq1_cint1_134222:13:42:42.279 [SimsCluster-akka.actor.default-dispatcher-24] INFO  simulation.akka.core.Driver - Average 65 ms
+log/0/scaleout_SBM_cores50_cfreq1_cint1_134243:13:43:07.532 [SimsCluster-akka.actor.default-dispatcher-36] INFO  simulation.akka.core.Driver - Average 94 ms

@@ -7,7 +7,7 @@ val paradiseVersion = "2.1.0"
 val breezeVersion = "0.13.2"
 val scalaTestVersion = "3.1.2"
 val squidVersion = "0.4.1-SNAPSHOT"
-
+val cloudcityVersion = "2.0-SNAPSHOT"
 run / fork := true
 
 lazy val commonSettings = Seq(
@@ -38,8 +38,8 @@ lazy val example = (project in file("example"))
   .settings(
     name := f"${project_name}-example",
     commonSettings, squidSettings,
-    libraryDependencies += "ch.epfl.data" %% "cloudcity-core" % "2.0-SNAPSHOT",
-    libraryDependencies += "ch.epfl.data" %% "cloudcity-library" % "2.0-SNAPSHOT",
+    libraryDependencies += "ch.epfl.data" %% "cloudcity-core" % cloudcityVersion,
+    libraryDependencies += "ch.epfl.data" %% "cloudcity-library" % cloudcityVersion,
     runAll := runAllIn(Compile).value,
     Test / parallelExecution := false,
   )
@@ -47,7 +47,7 @@ lazy val example = (project in file("example"))
 lazy val genExample = (project in file("generated"))
   .settings(
     name := f"${project_name}-genExample",
-    libraryDependencies += "ch.epfl.data" %% "cloudcity-akka" % "2.0-SNAPSHOT",
+    libraryDependencies += "ch.epfl.data" %% "cloudcity-akka" % cloudcityVersion,
     Test / parallelExecution := false,
     commonSettings
   ).dependsOn(example)
